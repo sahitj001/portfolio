@@ -1,0 +1,136 @@
+.container{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #111111;
+    align-items: center;
+}
+
+.title{
+    margin:0;
+    font-size: 3.375em;
+    font-weight: bold;
+    letter-spacing: 0.03em;
+}
+
+.subtitle{ 
+    margin:0;
+    letter-spacing: 0.03em;
+}
+
+.navItem{
+    list-style: none;
+}
+
+/* illustrations underneath */
+.el1{
+    position: absolute;
+    height:10em;
+    width:0.5em;
+    background-color:white;
+    left:15%;
+    top:20%;
+}
+
+.el2{
+    position: absolute;
+    height:0.5em;
+    width:0.5em;
+    background-color:white;
+    left:18%;
+    top:40%;
+}
+
+.el3{
+    position: absolute;
+    height:0.6em;
+    width:5em;
+    background-color:white;
+    right:30%;
+    bottom:12%;
+}
+
+.el4{
+    position: absolute;
+    height:0.8em;
+    width:6em;
+    background-color:white;
+    right:31%;
+    bottom:11%;
+}
+
+/* top left triangle */
+.tlDot{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-color: white;
+    left: 5%;
+    top: 5%
+}
+
+/* bottom left triangle */
+.blDot{
+position: absolute;
+width: 8px;
+height: 8px;
+border-top-style: solid;
+border-right-style: solid;
+border-color: white;
+left: 5%;
+bottom: 5%
+}
+
+/* top right triangle */
+.trDot{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-color: white;
+    right: 5%;
+    top: 5%
+}
+
+/* bottom right triangle */
+.brDot{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-left-style: solid;
+    border-top-style: solid;
+    border-color: white;
+    bottom: 5%;
+    right: 5%
+}
+
+
+
+
+.flexList{
+    display:flex;
+    flex-direction: row;
+}
+
+ul li{
+    /* top right bottom left */
+    margin: 1.5em 2em 0em 5em;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+a:visited{
+    color:white;
+}
+
+.header{
+    margin-right: 4em;
+}
