@@ -10,6 +10,7 @@ Download this repo and then run in terminal:
 
 ## Available Scripts
 To run the app local (http://localhost:3000)
+
 `npm start`
 
 ## Packages I used
