@@ -2,8 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Index} from './components/Index';
 import {About} from './components/About';
 import {Route, BrowserRouter as Router} from "react-router-dom";
-import {useLocation} from 'react-router-dom';
-import styles from './css/app.module.css';
+
 
 
 function App() {
