@@ -18,4 +18,5 @@ To run the app local (http://localhost:3000)
 - [SCSS](https://www.npmjs.com/package/node-sass)
 - [react-parallax-tilt](https://www.npmjs.com/package/react-parallax)
 
-
+## License
+MIT
