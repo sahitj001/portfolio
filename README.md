@@ -16,6 +16,6 @@ To run the app local (http://localhost:3000)
 ## Packages I used
 - `npx create-react-app`
 - [SCSS](https://www.npmjs.com/package/node-sass)
-
+- [react-parallax-tilt](https://www.npmjs.com/package/react-parallax)
 
 
