@@ -3,6 +3,7 @@ import styles from '../css/work.module.scss'
 import { Route, BrowserRouter as Router, Link } from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
 import cat from '../assets/images/cat.bmp';
+import workDot from '../assets/images/work-dot.svg';
 
 export function Work() {
 	return (
@@ -30,21 +31,21 @@ export function Work() {
 				</nav>
 			</div>
 
-			<Tilt className={styles.tilt} tiltMaxAngleX={2} tiltMaxAngleY={2} scale={0.95} trackOnWindow={true} tiltReverse={true} transitionSpeed={2500}>
-				<div className={styles.tlDot}></div>
-				<div className={styles.blDot}></div>
-				<div className={styles.trDot}></div>
-				<div className={styles.brDot}></div>
+			<Tilt className={styles.tiltDot} tiltMaxAngleX={2} tiltMaxAngleY={2} trackOnWindow={true} tiltReverse={true} transitionSpeed={2500}>
+				<img className={styles.tlDot} src={workDot} alt=""/>
+				<img className={styles.blDot} src={workDot} alt=""/>
+				<img className={styles.trDot} src={workDot} alt=""/>
+				<img className={styles.brDot} src={workDot} alt=""/>
 			</Tilt>
 
-			<div className={styles.testt}>
-				<div className={styles.test}>
+			<div className={styles.content}>
+				<div className={styles.column}>
 					<img src={cat} alt="" />
 					<img src={cat} alt="" />
 					<img src={cat} alt="" />
 				</div>
 
-				<div className={styles.test}>
+				<div className={styles.column}>
 					<img src={cat} alt="" />
 					<img src={cat} alt="" />
 					<img src={cat} alt="" />

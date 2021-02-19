@@ -28,13 +28,14 @@ export function Index() {
 					</ul>
 				</nav>
 
-				<Tilt className={styles.tilt} tiltMaxAngleX={2} tiltMaxAngleY={2} scale={0.95} trackOnWindow={true} tiltReverse={true} transitionSpeed={2500}>
+				<Tilt className={styles.tiltDot} tiltMaxAngleX={2} tiltMaxAngleY={2} trackOnWindow={true} tiltReverse={true} transitionSpeed={2500}>
 					<div className={styles.tlDot}></div>
 					<div className={styles.blDot}></div>
 					<div className={styles.trDot}></div>
 					<div className={styles.brDot}></div>
 				</Tilt>
-				<Tilt className={styles.tilt} tiltMaxAngleX={1} tiltMaxAngleY={1} scale={0.95} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
+
+				<Tilt className={styles.tilt} tiltMaxAngleX={1} tiltMaxAngleY={1} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
 					<div className={styles.el1}></div>
 					<div className={styles.el2}></div>
 					<div className={styles.el3}></div>

@@ -31,21 +31,24 @@ export function About() {
 				</nav>
 			</div>
 
-			<Tilt className={styles.tilt} tiltMaxAngleX={2} tiltMaxAngleY={2} scale={0.95} trackOnWindow={true} tiltReverse={true} transitionSpeed={2500}>
+			<Tilt className={styles.tiltDot} tiltMaxAngleX={2} tiltMaxAngleY={2}  trackOnWindow={true} tiltReverse={true} transitionSpeed={2500}>
 					<img src={dot} className={styles.trDot} alt=""/>
 					<img src={dot} className={styles.tlDot} alt=""/>
 					<img src={dot} className={styles.blDot} alt=""/>
 					<img src={dot} className={styles.brDot} alt=""/>
 				</Tilt>
 
-			<div className={styles.test}>
-			<img src={cat} alt=""/>
-			<img src={cat} alt=""/>
-			<img src={cat} alt=""/>
+			<div className={styles.content}>
+				<div className={styles.column}>
+					<h2>Who am I?</h2>
+					<p>Some say I am a legend. But it do be like that.</p>
+				</div>
+
+				<div className={styles.column}>
+					<h2>Who am I?</h2>
+					<p>Some say I am a legend. But it do be like that.</p>
+				</div>
 			</div>
-
-
-
 
 
 		</div>
