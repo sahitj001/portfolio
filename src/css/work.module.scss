@@ -4,7 +4,6 @@
 .container {
 	background-color: $bg;
 	display: flex;
-	overflow: auto;
 	position: relative;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -19,7 +18,6 @@
 	position: sticky;
 	top:33.45vh;
 	align-self: flex-start;
-
 }
 
 .content{

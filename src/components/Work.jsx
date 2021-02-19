@@ -52,9 +52,6 @@ export function Work() {
 				</div>
 			</div>
 
-
-
-
 		</div>
 	)
 }
