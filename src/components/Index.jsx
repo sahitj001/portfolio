@@ -1,27 +1,18 @@
 import styles from '../css/index.module.scss';
 import { Route, BrowserRouter as Router, Link } from "react-router-dom";
-import {useEffect} from 'react'
-
 import Tilt from 'react-parallax-tilt';
 
 
 
-export function Index(props) {
-	useEffect(() => {
-
-		console.log('yeet', props.location.pathname)
-	})
-
+export function Index() {
 	return (
 		<div className={styles.bg}>
-
 			<div className={styles.container}>
 
 				<header className={styles.header}>
 					<h1 className={styles.title}>PORTFOLIO</h1>
 					<h2 className={styles.subtitle}>JORDY SAHIT</h2>
 				</header>
-
 
 				<nav>
 					<ul className={styles.flexList}>
@@ -32,11 +23,10 @@ export function Index(props) {
 							<Link to="/work">Work</Link>
 						</li>
 						<li className={styles.navItem}>
-							<Link to="/contact">Contact</Link>
+							<a href="mailto:jordy.sahit@hva.nl">Contact</a>
 						</li>
 					</ul>
 				</nav>
-
 
 				<Tilt className={styles.tilt} tiltMaxAngleX={2} tiltMaxAngleY={2} scale={0.95} trackOnWindow={true} tiltReverse={true} transitionSpeed={2500}>
 					<div className={styles.tlDot}></div>
@@ -58,7 +48,6 @@ export function Index(props) {
 				</div>
 
 			</div>
-
 		</div>
 	)
 }

@@ -1,9 +1,94 @@
+@import 'global';
+
 .container {
-	background-color: #111111;
-	width: 100vw;
-	height: 100vh;
+	background-color: $bg;
+	display: flex;
+	height:100%;
+
+	position: relative;
+	align-items: center;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-around;
+	z-index: 2;
+}
+
+
+
+@keyframes opacity{
+	from {
+		transform: scale(0,0);
+		opacity: 0;
+	}
+}
+
+.tilt img {
+	animation-duration: 1.5s;
+	animation-name: opacity;
+}
+
+.test{
+	position:relative;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+
+.heading{
+	display: flex;
+	flex-direction: column;
+	position: sticky;
+	top:30vh;
+	align-self: flex-start;
+}
+
+ul li {
+	/* top right bottom left */
+	margin: 1.5em 2em 0em 5em;
+	transition: all .2s ease-in-out;
 }
 
 .test {
-	margin: 0;
+	display:flex;
+	justify-content: center;
+	align-self: flex-end;
+	margin-top: 10em;
+	flex-wrap: wrap;
 }
+
+.trDot {
+	position: absolute;
+	right: 5%;
+	top: 5%;
+	transform:scale(1.5, 1.5);
+
+}
+
+.brDot {
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+	transform:scale(1.5, 1.5) rotate(90deg);
+}
+
+/* top left triangle */
+.tlDot {
+	position: absolute;
+	left: 5%;
+	top: 5%;
+	transform:scale(1.5, 1.5) rotate(270deg);
+}
+
+/* bottom left triangle */
+.blDot {
+	position: absolute;
+	left: 5%;
+	bottom: 5%;
+	transform:scale(1.5, 1.5) rotate(180deg);
+}
+
+.backButton{
+	font-weight: 800;
+	list-style: none;
+}
+

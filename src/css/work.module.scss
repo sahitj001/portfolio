@@ -1,0 +1,51 @@
+@import 'global';
+
+.container {
+	background-color: $bg;
+	display: flex;
+	height:100%;
+	position: relative;
+	align-items: center;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-around;
+	z-index: 2;
+}
+
+
+.heading{
+	display: flex;
+	flex-direction: column;
+	position: sticky;
+	top:35vh;
+	align-self: flex-start;
+	margin-left: 2rem;
+}
+
+.testt{
+	display:flex;
+	justify-content: space-around;
+	flex-direction: row;
+}
+
+.test {
+	position:relative;
+	display: flex;
+	flex-direction: column;
+
+	margin-top: 12rem;
+	padding-right: 2rem;
+	padding-bottom:12rem;
+}
+
+.test img{
+	width:30rem;
+	padding: 1rem 0 1rem 0;
+}
+
+
+
+.backButton{
+	font-weight: 800;
+	list-style: none;
+}

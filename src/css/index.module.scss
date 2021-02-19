@@ -1,4 +1,4 @@
-$white : #c4c4c4;
+@import 'global';
 
 .container {
 	display: flex;
@@ -13,38 +13,15 @@ $white : #c4c4c4;
 }
 
 .bg {
-	background-color: #111111;
+	background-color: $bg;
 }
 
-.tilt {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-	background-color: none;
-	transform: scale(0.5,0.5);
-}
+
 
 @keyframes scaleNav {
 	from {
 		transform: scale=0;
 	}
-}
-
-.title {
-	margin: 0;
-	font-size: 3.375rem;
-	font-weight: bold;
-	letter-spacing: 0.03em;
-}
-
-.subtitle {
-	margin: 0;
-	letter-spacing: 0.03em;
-}
-
-.navItem {
-	list-style: none;
 }
 
 /* illustrations underneath */
@@ -146,54 +123,6 @@ $white : #c4c4c4;
 	animation-duration: 2.5s;
 }
 
-/* top left triangle */
-.tlDot {
-	position: absolute;
-	width: 8px;
-	height: 8px;
-	border-right-style: solid;
-	border-bottom-style: solid;
-	border-color: $white;
-	left: 5%;
-	top: 5%
-}
-
-/* bottom left triangle */
-.blDot {
-	position: absolute;
-	width: 8px;
-	height: 8px;
-	border-top-style: solid;
-	border-right-style: solid;
-	border-color: $white;
-	left: 5%;
-	bottom: 5%
-}
-
-/* top right triangle */
-.trDot {
-	position: absolute;
-	width: 8px;
-	height: 8px;
-	border-left-style: solid;
-	border-bottom-style: solid;
-	border-color: $white;
-	right: 5%;
-	top: 5%
-}
-
-/* bottom right triangle */
-.brDot {
-	position: absolute;
-	width: 8px;
-	height: 8px;
-	border-left-style: solid;
-	border-top-style: solid;
-	border-color: $white;
-	bottom: 5%;
-	right: 5%
-}
-
 // nav flex
 .flexList {
 	display: flex;
@@ -222,4 +151,52 @@ a:visited {
 
 .header {
 	margin-right: 4em;
+}
+
+/* top left triangle */
+.tlDot {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-color: $white;
+	left: 5%;
+	top: 5%;
+}
+
+/* bottom left triangle */
+.blDot {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-color: $white;
+	left: 5%;
+	bottom: 5%;
+}
+
+/* top right triangle */
+.trDot {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-color: $white;
+	right: 5%;
+	top: 5%;
+}
+
+/* bottom right triangle */
+.brDot {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-left-style: solid;
+	border-top-style: solid;
+	border-color: $white;
+	bottom: 5%;
+	right: 5%;
 }

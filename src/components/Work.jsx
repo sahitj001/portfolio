@@ -1,17 +1,16 @@
 import React from "react"
-import styles from '../css/about.module.scss'
+import styles from '../css/work.module.scss'
 import { Route, BrowserRouter as Router, Link } from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
 import cat from '../assets/images/cat.bmp';
-import dot from '../assets/images/about-dot.svg';
 
-export function About() {
+export function Work() {
 	return (
 		<div className={styles.container}>
 
 			<div className={styles.heading}>
 				<header className={styles.header}>
-					<h1 className={styles.title}>ABOUT</h1>
+					<h1 className={styles.title}>WORK</h1>
 					<h2 className={styles.subtitle}>JORDY SAHIT</h2>
 					<p>Focused on UX/Frontend</p>
 				</header>
@@ -22,7 +21,7 @@ export function About() {
 							<Link to="/">  &lt; </Link>
 						</li>
 						<li className={styles.navItem}>
-							<Link to="/work">Work</Link>
+							<Link to="/about">About</Link>
 						</li>
 						<li className={styles.navItem}>
 							<a href="mailto:jordy.sahit@hva.nl">Contact</a>
@@ -32,18 +31,25 @@ export function About() {
 			</div>
 
 			<Tilt className={styles.tilt} tiltMaxAngleX={2} tiltMaxAngleY={2} scale={0.95} trackOnWindow={true} tiltReverse={true} transitionSpeed={2500}>
-					<img src={dot} className={styles.trDot} alt=""/>
-					<img src={dot} className={styles.tlDot} alt=""/>
-					<img src={dot} className={styles.blDot} alt=""/>
-					<img src={dot} className={styles.brDot} alt=""/>
-				</Tilt>
+				<div className={styles.tlDot}></div>
+				<div className={styles.blDot}></div>
+				<div className={styles.trDot}></div>
+				<div className={styles.brDot}></div>
+			</Tilt>
 
-			<div className={styles.test}>
-			<img src={cat} alt=""/>
-			<img src={cat} alt=""/>
-			<img src={cat} alt=""/>
+			<div className={styles.testt}>
+				<div className={styles.test}>
+					<img src={cat} alt="" />
+					<img src={cat} alt="" />
+					<img src={cat} alt="" />
+				</div>
+
+				<div className={styles.test}>
+					<img src={cat} alt="" />
+					<img src={cat} alt="" />
+					<img src={cat} alt="" />
+				</div>
 			</div>
-
 
 
 
