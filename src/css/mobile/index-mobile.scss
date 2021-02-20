@@ -1,0 +1,150 @@
+@import '../global.scss';
+@import '../animations.scss';
+
+@media (max-width: 425px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content:space-evenly;
+		width: 100vw;
+		height: 100vh;
+		align-items: center;
+		flex-wrap: wrap;
+		z-index: 2;
+		position: relative;
+		margin:auto;
+
+	}
+
+	.bg {
+		background-color: $bg;
+	}
+
+	.el1 {
+		display: none;
+	}
+
+	.el2 {
+		display: none;
+	}
+
+	.el3 {
+		display: none;
+	}
+
+	.el4 {
+		display: none;
+	}
+
+	.el5 {
+		display: none;
+	}
+
+	.el6 {
+		display: none;
+	}
+
+	li:hover {
+		transform: scale(1.1, 1.1);
+	}
+
+	a {
+		color: $white;
+		text-decoration: none;
+		font-size: 1.5rem;
+	}
+
+	ul li {
+		/* top right bottom left */
+		margin: 1em 0em 1em 0;
+		transition: all .2s ease-in-out;
+	}
+
+	.tilt div {
+		animation-duration: 2.25s;
+		animation-name: grow;
+	}
+
+	a:visited {
+		color: $white;
+	}
+
+	.header {
+		margin-right: 0;
+	}
+
+	.title{
+		margin:0;
+		font-size: 2rem;
+	}
+
+	.flexList {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* top left triangle */
+.tlDot {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-color: $white;
+	left: 5%;
+	top: 5%;
+}
+
+/* bottom left triangle */
+.blDot {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-color: $white;
+	left: 5%;
+	bottom: 5%;
+}
+
+/* top right triangle */
+.trDot {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-color: $white;
+	right: 5%;
+	top: 5%;
+}
+
+/* bottom right triangle */
+.brDot {
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border-left-style: solid;
+	border-top-style: solid;
+	border-color: $white;
+	bottom: 5%;
+	right: 5%;
+}
+
+.tiltDot{
+	display:flex;
+	position: absolute;
+	align-content: center;
+	width: 93%;
+	height: 93%;
+	z-index: -1;
+	background-color: none;
+	animation-duration: 2.5s;
+	animation-name: gridExpand;
+	transition-timing-function: ease-out;
+}
+
+.body{
+	overflow: hidden;
+}
+}

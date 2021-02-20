@@ -1,6 +1,8 @@
 @import 'global';
 @import 'animations';
 
+@media (min-width: 1024px){
+
 
 .container {
 	background-color: $bg;
@@ -89,5 +91,5 @@ ul li {
 	flex-wrap: wrap;
 	justify-content: center;
 }
-
+}
 
