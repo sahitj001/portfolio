@@ -6,9 +6,8 @@ import Tilt from 'react-parallax-tilt';
 
 export function Index() {
 	return (
-		<div className={styles.bg}>
-			<div className={styles.container}>
 
+			<div className={styles.container}>
 				<header className={styles.header}>
 					<h1 className={styles.title}>PORTFOLIO</h1>
 					<h2 className={styles.subtitle}>JORDY SAHIT</h2>
@@ -28,7 +27,7 @@ export function Index() {
 					</ul>
 				</nav>
 
-				<Tilt className={styles.tiltDot} tiltMaxAngleX={2} tiltMaxAngleY={2} trackOnWindow={true} tiltReverse={true} transitionSpeed={2500}>
+				<Tilt className={styles.tiltDot} tiltMaxAngleX={3} tiltMaxAngleY={3} trackOnWindow={true} tiltReverse={true} transitionSpeed={2500}>
 					<div className={styles.tlDot}></div>
 					<div className={styles.blDot}></div>
 					<div className={styles.trDot}></div>
@@ -47,8 +46,7 @@ export function Index() {
 					<div className={styles.el6}></div>
 					<div className={styles.el7}></div>
 				</div>
-
 			</div>
-		</div>
+
 	)
 }

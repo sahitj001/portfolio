@@ -1,8 +1,7 @@
-@import '../global.scss';
-@import '../animations.scss';
+@import '../global';
+@import '../animations';
 
-@media (max-width: 425px) {
-	//container that contains whole page
+@media (min-width: 626px){
 	.container {
 		display: flex;
 		flex-direction: column;
@@ -13,47 +12,53 @@
 		flex-wrap: wrap;
 		z-index: 2;
 		position: relative;
-		margin: auto;
 		background-color: $bg;
-
 	}
 
+	.title{
+		margin:0;
+	}
 
+	/* illustrations underneath */
+	.tilt div {
+		animation-duration: 2.25s;
+		animation-name: grow;
+	}
 
 	.el1 {
 		position: absolute;
-		height: 5rem;
-		width: 0.5rem;
+		height: 10em;
+		width: 0.5em;
 		background-color: $white;
 		left: 15%;
-		top: 35%;
-		max-height: 20rem;
+		top: 20%;
+		max-height: 20em;
 	}
 
 	.el2 {
 		position: absolute;
-		height: 0.5rem;
-		width: 0.5rem;
+		height: 0.5em;
+		width: 0.5em;
 		background-color: $white;
-		left: 25%;
-		top: 47%;
+		left: 18%;
+		top: 40%;
 	}
 
 	.el3 {
 		position: absolute;
-		height: 0.3rem;
-		width: 3rem;
+		height: 0.6em;
+		width: 5em;
 		background-color: $white;
-		right: 19%;
+		right: 30%;
 		bottom: 12%;
 	}
 
 	.el4 {
 		position: absolute;
-		height: 0.5rem;
-		width: 4rem;
+		height: 0.8em;
+		width: 6em;
 		background-color: $white;
-		right: 25%;
+		right: 31%;
 		bottom: 11%;
 	}
 
@@ -76,7 +81,7 @@
 		height: 4.5em;
 		width: 0.5em;
 		background-color: $white;
-		right: 4%;
+		right: 2%;
 		top: 30%;
 		opacity: 1;
 		animation-name: expandFromRight;
@@ -90,12 +95,28 @@
 		height: 4.5em;
 		width: 0.25em;
 		background-color: $white;
-		right: 7%;
+		right: 3.5%;
 		top: 30%;
 		opacity: 1;
 		animation-name: expandFromRight;
 		animation-timing-function: ease-in-out;
 		animation-duration: 2.5s;
+	}
+
+	// nav flex
+	.flexList {
+		display: flex;
+		flex-direction: row;
+	}
+
+	ul li {
+		/* top right bottom left */
+		margin: 0em 1.5em 0em 1.5em;
+		transition: all .2s ease-in-out;
+	}
+
+	ul {
+		padding:0;
 	}
 
 	li:hover {
@@ -108,38 +129,8 @@
 		font-size: 1.5rem;
 	}
 
-	ul li {
-		/* top right bottom left */
-		margin: 1em 0em 1em 0;
-		transition: all .2s ease-in-out;
-	}
-
-	.tilt div {
-		animation-duration: 2.25s;
-		animation-name: grow;
-	}
-
 	a:visited {
 		color: $white;
-	}
-
-	.header {
-		margin-right: 0;
-	}
-
-	.title {
-		margin: 0;
-		font-size: 2.5rem;
-	}
-
-	ul {
-		padding: 0;
-	}
-
-	.flexList {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 	}
 
 	/* top left triangle */
@@ -194,21 +185,4 @@
 		border-width: medium;
 	}
 
-	// the class that makes sure everything is going to get tilted
-	.tiltDot {
-		display: flex;
-		position: absolute;
-		align-content: center;
-		width: 93%;
-		height: 93%;
-		z-index: -1;
-		background-color: none;
-		animation-duration: 2.5s;
-		animation-name: gridExpand;
-		transition-timing-function: ease-out;
-	}
-
-	.body {
-		overflow: hidden;
-	}
 }
