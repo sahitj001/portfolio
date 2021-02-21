@@ -42,7 +42,7 @@ export function About() {
 				<div className={styles.column}>
 					<h2>Who am I?</h2>
 					<div className={styles.iconSection}>
-					<p>Some say I am a legend. But it do be like that.</p>
+					<p>Portofolio designed by myself and made with ❤️ on React</p>
 					<ion-icon className={styles.reactLogo} name="logo-react"></ion-icon>
 					</div>
 

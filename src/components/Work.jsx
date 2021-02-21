@@ -4,6 +4,7 @@ import { Route, BrowserRouter as Router, Link } from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
 import cat from '../assets/images/cat.bmp';
 import workDot from '../assets/images/work-dot.svg';
+import itemDot from '../assets/images/item-dot.svg';
 
 export function Work() {
 	return (
@@ -32,25 +33,71 @@ export function Work() {
 			</div>
 
 			<Tilt className={styles.tiltDot} tiltMaxAngleX={3} tiltMaxAngleY={3} trackOnWindow={true} tiltReverse={true} transitionSpeed={2500}>
-				<img className={styles.tlDot} src={workDot} alt=""/>
-				<img className={styles.blDot} src={workDot} alt=""/>
-				<img className={styles.trDot} src={workDot} alt=""/>
-				<img className={styles.brDot} src={workDot} alt=""/>
+				<img className={styles.tlDot} src={workDot} alt="" />
+				<img className={styles.blDot} src={workDot} alt="" />
+				<img className={styles.trDot} src={workDot} alt="" />
+				<img className={styles.brDot} src={workDot} alt="" />
 			</Tilt>
 
 			<div className={styles.content}>
 				<div className={styles.column}>
-					<Link to="/work/tcg">test </Link>
-					<img src={cat} alt="" />
-					<img src={cat} alt="" />
-					<img src={cat} alt="" />
+					<Link to="/work/tcg">
+						<div className={styles.item}>
+							<img className={styles.thumbnail} src={cat} alt="" />
+							<Tilt className={styles.tiltItem} tiltMaxAngleX={5} tiltMaxAngleY={5} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
+								<img className={styles.tlDot} src={itemDot} alt="" />
+								<img className={styles.blDot} src={itemDot} alt="" />
+								<img className={styles.trDot} src={itemDot} alt="" />
+								<img className={styles.brDot} src={itemDot} alt="" />
+							</Tilt>
+							<div className={styles.cock}>
+								<h2>Scared cat</h2>
+								<p>Really scared of you</p>
+							</div>
+						</div>
+					</Link>
+
+					<Link to="/work/tcg">
+						<div className={styles.item}>
+							<img className={styles.thumbnail} src={cat} alt="" />
+							<Tilt className={styles.tiltItem} tiltMaxAngleX={5} tiltMaxAngleY={5} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
+								<img className={styles.tlDot} src={itemDot} alt="" />
+								<img className={styles.blDot} src={itemDot} alt="" />
+								<img className={styles.trDot} src={itemDot} alt="" />
+								<img className={styles.brDot} src={itemDot} alt="" />
+							</Tilt>
+							<div className={styles.cock}>
+								<h2>Scared cat</h2>
+								<p>Really scared of you</p>
+							</div>
+						</div>
+					</Link>
+
+					<Link to="/work/tcg">
+						<div className={styles.item}>
+							<img className={styles.thumbnail} src={cat} alt="" />
+							<Tilt className={styles.tiltItem} tiltMaxAngleX={5} tiltMaxAngleY={5} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
+								<img className={styles.tlDot} src={itemDot} alt="" />
+								<img className={styles.blDot} src={itemDot} alt="" />
+								<img className={styles.trDot} src={itemDot} alt="" />
+								<img className={styles.brDot} src={itemDot} alt="" />
+							</Tilt>
+							<div className={styles.cock}>
+								<h2>Scared cat</h2>
+								<p>Really scared of you</p>
+							</div>
+						</div>
+					</Link>
+
+					{/* <img src={cat} alt="" />
+					<img src={cat} alt="" /> */}
 				</div>
 
-				<div className={styles.column}>
+				{/* <div className={styles.column}>
 					<img src={cat} alt="" />
 					<img src={cat} alt="" />
 					<img src={cat} alt="" />
-				</div>
+				</div> */}
 			</div>
 
 		</div>

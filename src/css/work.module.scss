@@ -35,14 +35,83 @@
 }
 
 .column {
+	position: relative;
 	display: flex;
-	flex-direction: column;
-	margin-top: 15rem;
+	flex-direction: row;
+	margin-top: 16rem;
 	margin-bottom:12rem;
+	flex-wrap: wrap;
+	width: 74rem;
+}
+//portfolio item
+.item{
+	position: relative;
+
 }
 
-.column img{
-	width:25rem;
+
+
+//when there you don't hover over the item, there is no text
+.item div{
+	padding-top: 1em;
+	opacity: 0;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	// top: 50%;
+  // left: 50%;
+	text-align: center;
+	transition: all 0.15s ease-out;
+}
+
+//on hover, it will show the title and subtitle of the project
+.item:hover div{
+	position: absolute;
+	padding-top: 0;
+	opacity: 1;
+	transition: all 0.15s ease;
+}
+
+.itemText{
+	top: 50%;
+  left: 50%;
+	padding-top: 1em;
+	opacity: 1;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	transition: all 0.75s ease-out;
+}
+
+.item img{
+	opacity: 1;
+	transition: opacity 0.2s;
+}
+
+.item:hover .thumbnail{
+	opacity: 0.5;
+	transition: opacity 0.2s;
+}
+
+.tiltItem{
+	position: absolute;
+	display: flex;
+	width: 95%;
+	height: 95%;
+	transform: translate(-50%, -50%);
+	top: 0;
+  left: 0;
+	right: 0;
+	bottom: 0;
+	align-content: center;
+	justify-content: center;
+	margin: auto;
+	opacity: 1;
+	transition: opacity 0.1s;
+}
+
+
+.thumbnail{
+	width:35rem;
 	margin: 1rem 1rem 1rem 1rem;
 }
 
