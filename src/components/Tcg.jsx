@@ -5,13 +5,13 @@ import Tilt from 'react-parallax-tilt';
 import cat from '../assets/images/cat.bmp';
 import workDot from '../assets/images/work-dot.svg';
 
-export function Work() {
+export function Tcg() {
 	return (
 		<div className={styles.container}>
 
 			<div className={styles.heading}>
 				<header className={styles.header}>
-					<h1 className={styles.title}>WORK</h1>
+					<h1 className={styles.title}>TESTETSE</h1>
 					<h2 className={styles.subtitle}>JORDY SAHIT</h2>
 					<p>Focused on UX/Frontend</p>
 				</header>
@@ -19,7 +19,7 @@ export function Work() {
 				<nav>
 					<ul className={styles.flexList}>
 						<li className={styles.backButton}>
-							<Link to="/">  &lt; </Link>
+							<Link to="/work">  &lt; </Link>
 						</li>
 						<li className={styles.navItem}>
 							<Link to="/about">About</Link>
