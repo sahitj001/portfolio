@@ -50,7 +50,7 @@ export function Work() {
 								<img className={styles.trDot} src={itemDot} alt="" />
 								<img className={styles.brDot} src={itemDot} alt="" />
 							</Tilt>
-							<div className={styles.cock}>
+							<div className={styles.itemText}>
 								<h2>Scared cat</h2>
 								<p>Really scared of you</p>
 							</div>
@@ -66,7 +66,7 @@ export function Work() {
 								<img className={styles.trDot} src={itemDot} alt="" />
 								<img className={styles.brDot} src={itemDot} alt="" />
 							</Tilt>
-							<div className={styles.cock}>
+							<div className={styles.itemText}>
 								<h2>Scared cat</h2>
 								<p>Really scared of you</p>
 							</div>
@@ -82,7 +82,7 @@ export function Work() {
 								<img className={styles.trDot} src={itemDot} alt="" />
 								<img className={styles.brDot} src={itemDot} alt="" />
 							</Tilt>
-							<div className={styles.cock}>
+							<div className={styles.itemText}>
 								<h2>Scared cat</h2>
 								<p>Really scared of you</p>
 							</div>
