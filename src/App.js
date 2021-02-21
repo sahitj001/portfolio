@@ -3,7 +3,7 @@ import {Index} from './components/Index';
 import {About} from './components/About';
 import {Work} from './components/Work';
 import {Tcg} from './components/Tcg';
-import {Route, BrowserRouter as Router} from "react-router-dom";
+import {Route, BrowserRouter as Router, Switch} from "react-router-dom";
 
 
 
@@ -19,10 +19,13 @@ function App() {
 
   return (
     <Router>
-    <Route path="/" exact component={Index}></Route>
-		<Route path="/work/tcg" component={Tcg}></Route>
-    <Route path="/about" component={About}></Route>
-		<Route path="/work" component={Work}></Route>
+			<Switch>
+    		<Route path="/" exact component={Index}></Route>
+				<Route path="/work/tcg" component={Tcg}></Route>
+    		<Route path="/about" component={About}></Route>
+				<Route path="/work" component={Work}></Route>
+				<Route path="*" component={About}></Route>
+			</Switch>
     </Router>
   );
 }
