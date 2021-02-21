@@ -76,7 +76,7 @@ export function Work() {
 					<Link to="/work/tcg">
 						<div className={styles.item}>
 							<img className={styles.thumbnail} src={cat} alt="" />
-							<Tilt className={styles.tiltItem} tiltMaxAngleX={5} tiltMaxAngleY={5} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
+							<Tilt className={styles.tiltItem} tiltMaxAngleX={10} tiltMaxAngleY={10} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
 								<img className={styles.tlDot} src={itemDot} alt="" />
 								<img className={styles.blDot} src={itemDot} alt="" />
 								<img className={styles.trDot} src={itemDot} alt="" />
