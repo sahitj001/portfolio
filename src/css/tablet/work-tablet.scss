@@ -1,8 +1,22 @@
-@import 'global';
-@import 'animations';
-@import './tablet/work-tablet';
+@import '../global';
+@import '../animations';
 
-@media (min-width: 1234px){
+@media (min-width: 426px){
+.heading{
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	align-self: center;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10em;
+}
+
+.flexList{
+	display: flex;
+	flex-direction: row;
+}
+
 .title {
 	padding:0;
 	margin: 0;
@@ -11,31 +25,22 @@
 	letter-spacing: 0.03em;
 }
 
-.flexList{
-	flex-direction: column;
-}
-
 .container {
 	background-color: $bg;
 	display: flex;
 	position: relative;
 	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 	z-index: 2;
 }
 
-.heading{
-	display: flex;
-	flex-direction: column;
-	position: sticky;
-	top:33.45vh;
-	align-self: flex-start;
-}
-
+//content class is here so that i can add multiple columns if i want to
 .content{
+	position: relative;
 	display:flex;
-	flex-direction: row;
+	flex-direction: column;
 	flex-wrap: wrap;
 }
 
@@ -43,11 +48,12 @@
 	position: relative;
 	display: flex;
 	flex-direction: row;
-	margin-top: 16rem;
+	justify-content: center;
 	margin-bottom:12rem;
 	flex-wrap: wrap;
-	width: 64.5rem;
+
 }
+
 //portfolio item
 .item{
 	position: relative;
@@ -97,11 +103,24 @@
 	transition: opacity 0.2s;
 }
 
+.workDot{
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-content: center;
+	width: 95%;
+	height: 95%;
+	z-index: -1;
+	animation-duration: 2.5s;
+	animation-name: gridExpand;
+	transition-timing-function: ease-out;
+}
+
 .tiltItem{
 	position: absolute;
 	display: flex;
-	width: 93%;
-	height: 93%;
+	width: 95%;
+	height: 95%;
 	transform: translate(-50%, -50%);
 	top: 0;
   left: 0;
@@ -116,7 +135,7 @@
 
 
 .thumbnail{
-	width:30rem;
+	width:21rem;
 	margin: 1rem 1rem 1rem 1rem;
 }
 
@@ -155,5 +174,7 @@
 	bottom: 5%;
 	transform:scale(1.5, 1.5) rotate(180deg);
 }
+
+
 }
 

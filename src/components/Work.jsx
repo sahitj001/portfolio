@@ -32,7 +32,8 @@ export function Work() {
 				</nav>
 			</div>
 
-			<Tilt className={styles.tiltDot} tiltMaxAngleX={3} tiltMaxAngleY={3} trackOnWindow={true} tiltReverse={true} transitionSpeed={2500}>
+
+			<Tilt className={styles.workDot} tiltMaxAngleX={3} tiltMaxAngleY={3} trackOnWindow={true} tiltReverse={true} transitionSpeed={2500}>
 				<img className={styles.tlDot} src={workDot} alt="" />
 				<img className={styles.blDot} src={workDot} alt="" />
 				<img className={styles.trDot} src={workDot} alt="" />
@@ -44,12 +45,12 @@ export function Work() {
 					<Link to="/work/tcg">
 						<div className={styles.item}>
 							<img className={styles.thumbnail} src={cat} alt="" />
-							<Tilt className={styles.tiltItem} tiltMaxAngleX={5} tiltMaxAngleY={5} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
-								<img className={styles.tlDot} src={itemDot} alt="" />
-								<img className={styles.blDot} src={itemDot} alt="" />
-								<img className={styles.trDot} src={itemDot} alt="" />
-								<img className={styles.brDot} src={itemDot} alt="" />
-							</Tilt>
+								<Tilt className={styles.tiltItem} tiltMaxAngleX={5} tiltMaxAngleY={5} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
+									<img className={styles.tlDot} src={itemDot} alt="" />
+									<img className={styles.blDot} src={itemDot} alt="" />
+									<img className={styles.trDot} src={itemDot} alt="" />
+									<img className={styles.brDot} src={itemDot} alt="" />
+								</Tilt>
 							<div className={styles.itemText}>
 								<h2>Scared cat</h2>
 								<p>Really scared of you</p>
@@ -60,12 +61,12 @@ export function Work() {
 					<Link to="/work/tcg">
 						<div className={styles.item}>
 							<img className={styles.thumbnail} src={cat} alt="" />
-							<Tilt className={styles.tiltItem} tiltMaxAngleX={5} tiltMaxAngleY={5} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
-								<img className={styles.tlDot} src={itemDot} alt="" />
-								<img className={styles.blDot} src={itemDot} alt="" />
-								<img className={styles.trDot} src={itemDot} alt="" />
-								<img className={styles.brDot} src={itemDot} alt="" />
-							</Tilt>
+								<Tilt className={styles.tiltItem} tiltMaxAngleX={5} tiltMaxAngleY={5} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
+									<img className={styles.tlDot} src={itemDot} alt="" />
+									<img className={styles.blDot} src={itemDot} alt="" />
+									<img className={styles.trDot} src={itemDot} alt="" />
+									<img className={styles.brDot} src={itemDot} alt="" />
+								</Tilt>
 							<div className={styles.itemText}>
 								<h2>Scared cat</h2>
 								<p>Really scared of you</p>
@@ -89,17 +90,8 @@ export function Work() {
 						</div>
 					</Link>
 
-					{/* <img src={cat} alt="" />
-					<img src={cat} alt="" /> */}
 				</div>
-
-				{/* <div className={styles.column}>
-					<img src={cat} alt="" />
-					<img src={cat} alt="" />
-					<img src={cat} alt="" />
-				</div> */}
 			</div>
-
 		</div>
 	)
 }
