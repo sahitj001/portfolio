@@ -10,20 +10,30 @@ import {Route, BrowserRouter as Router, Switch} from "react-router-dom";
 
 function App() {
 
-	if(window.location.pathname == '/about'){
-		console.log('ya yeet')
-	}
+	const [email, setEmail] = useState('');
+	const currentMail = 'jordy.sahit@hva.nl';
 
   useEffect(() => {
-		console.log(window.location.pathname);
+		function updateMail(){
+			setEmail(currentMail);
+		}
+
+		console.log('test', email);
+
+		if(email === ''){
+			updateMail();
+			console.log('email should now contain mail', email);
+		}
+
   })
 
   return (
     <Router>
 			<Switch>
-    		<Route path="/" exact component={Index}></Route>
+    		{/* <Route path="/" exact render={props => ( <Index {...props} setEmail(email)/> )}></Route> */}
+				<Route path="/" exact component={Index}></Route>
 				<Route path="/work/tcg" component={Tcg}></Route>
-    		<Route path="/about" exact component={About}></Route>
+    			<Route path="/about" exact component={About}></Route>
 				<Route path="/work" exact component={Work}></Route>
 				<Route path="*" component={PageNotFound}></Route>
 			</Switch>
