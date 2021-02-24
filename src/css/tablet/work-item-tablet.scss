@@ -1,33 +1,28 @@
-@import 'global';
-@import 'animations';
-@import './tablet/work-tablet';
-@import './mobile/work-mobile';
+@import '../global';
+@import '../animations';
 
-//desktop view
+//tablet view
 
-@media (min-width: 1234px) {
-
-	//contains the whole page
-	.container {
-		background-color: $bg;
-		display: flex;
-		position: relative;
-		flex-wrap: wrap;
-		flex-direction: row;
-		justify-content: center;
-		z-index: 2;
-	}
-
-	//this is the section with the header and nav
+@media (min-width: 426px) {
 	.heading {
 		display: flex;
 		flex-direction: column;
-		position: sticky;
-		top: 33.45vh;
-		align-self: flex-start;
+		position: relative;
+		align-self: center;
+		align-items: center;
+		justify-content: center;
+		margin-top: 10em;
 	}
 
-	//the title in this page -- WORK
+	.header p {
+		color: #FFCC00;
+	}
+
+	.flexList {
+		display: flex;
+		flex-direction: row;
+	}
+
 	.title {
 		padding: 0;
 		margin: 0;
@@ -36,30 +31,76 @@
 		letter-spacing: 0.03em;
 	}
 
-	//flexing the nav with this class
-	.flexList {
+	.container {
+		background-color: $bg;
+		display: flex;
+		position: relative;
+		flex-wrap: wrap;
 		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		z-index: 2;
+
 	}
 
-	//i made a class column so that i can add more columns later if i want to
-	.column {
+	.content {
 		position: relative;
 		display: flex;
-		flex-direction: row;
-		margin-top: 16rem;
-		margin-bottom: 12rem;
+		flex-direction: column;
 		flex-wrap: wrap;
-		width: 64.5rem;
+		justify-content: center;
 	}
 
 	//styling the content within the column class
+	.content p {
+		width: 30rem;
+		margin: 0.3rem 1rem 1rem 1rem;
+	}
+
+	.content h3 {
+		margin: 1rem 1rem 0 1rem;
+	}
+
+	.imageSize {
+		width: 29em;
+		align-self: flex-start;
+	}
+
 	.content {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		opacity: 0;
+		animation-fill-mode: forwards;
+		animation-duration: 0.75s;
+		animation-name: headingOpacity;
+		transition-timing-function: ease;
 	}
 
-	//portfolio item
+	.content p {
+		line-height: 1.4em;
+		letter-spacing: 0.012em;
+	}
+
+	.content div {
+		margin-top: 3em;
+	}
+
+	.content img {
+		height: 24.5rem;
+		margin: 3rem 1.5rem 1.5em 1.5rem;
+	}
+
+	.column {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-bottom: 30rem;
+		flex-wrap: wrap;
+
+	}
+
 	.item {
 		position: relative;
 		opacity: 0;
@@ -69,7 +110,43 @@
 		transition-timing-function: ease;
 	}
 
-	//the outer dots in each far corner
+	.item div {
+		padding-top: 1em;
+		opacity: 0;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		transition: all 0.15s ease-out;
+	}
+
+	.item:hover div {
+		position: absolute;
+		padding-top: 0;
+		opacity: 1;
+		transition: all 0.15s ease;
+	}
+
+	.itemText {
+		top: 50%;
+		left: 50%;
+		padding-top: 1em;
+		opacity: 1;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		transition: all 0.75s ease-out;
+	}
+
+	.item img {
+		opacity: 1;
+		transition: opacity 0.2s;
+	}
+
+	.item:hover .thumbnail {
+		opacity: 0.5;
+		transition: opacity 0.2s;
+	}
+
 	.workDot {
 		display: flex;
 		position: absolute;
@@ -83,55 +160,11 @@
 		transition-timing-function: ease-out;
 	}
 
-	//when you don't hover over the item, there is no text
-	.item div {
-		padding-top: 1em;
-		opacity: 0;
-		position: absolute;
-		transform: translate(-50%, -50%);
-		text-align: center;
-		transition: all 0.15s ease-out;
-	}
-
-	//on hover, it will show the title and subtitle of the project
-	.item:hover div {
-		position: absolute;
-		padding-top: 0;
-		opacity: 1;
-		transition: all 0.15s ease;
-	}
-
-	//styling of the title
-	.itemText {
-		top: 50%;
-		left: 50%;
-		padding-top: 1em;
-		opacity: 1;
-		position: absolute;
-		transform: translate(-50%, -50%);
-		text-align: center;
-		transition: all 0.75s ease-out;
-		width: 25rem;
-	}
-
-	//when you don't hover over it, the opacity is normal
-	.item img {
-		opacity: 1;
-		transition: opacity 0.2s;
-	}
-
-	//on hover, opacity will lower, so you can see the description of the item easily
-	.item:hover .thumbnail {
-		opacity: 0.5;
-		transition: opacity 0.2s;
-	}
-
-	//when you hover over the item, there will appear dots around each corner, this is for the styling
 	.tiltItem {
 		position: absolute;
 		display: flex;
-		width: 93%;
-		height: 93%;
+		width: 95%;
+		height: 95%;
 		transform: translate(-50%, -50%);
 		top: 0;
 		left: 0;
@@ -144,20 +177,21 @@
 		transition: opacity 0.1s;
 	}
 
-	//styling of the item size
 	.thumbnail {
-		width: 30rem;
+		width: 18rem;
 		margin: 1rem 1rem 1rem 1rem;
 	}
 
-	//back button of the nav
 	.backButton {
 		font-weight: 800;
 		list-style: none;
-		margin-bottom: 1em;
+		margin: 1em 1em 1em 1em;
 	}
 
-	//top right triangle
+	.navItem {
+		margin: 1em 1em 1em 1em;
+	}
+
 	.trDot {
 		position: absolute;
 		right: 5%;
@@ -165,7 +199,6 @@
 		transform: scale(1.5, 1.5);
 	}
 
-	// bottom right triangle
 	.brDot {
 		position: absolute;
 		bottom: 5%;
@@ -173,7 +206,6 @@
 		transform: scale(1.5, 1.5) rotate(90deg);
 	}
 
-	/* top left triangle */
 	.tlDot {
 		position: absolute;
 		left: 5%;
@@ -181,11 +213,15 @@
 		transform: scale(1.5, 1.5) rotate(270deg);
 	}
 
-	/* bottom left triangle */
 	.blDot {
 		position: absolute;
 		left: 5%;
 		bottom: 5%;
 		transform: scale(1.5, 1.5) rotate(180deg);
+	}
+
+	.navItem {
+		margin-right: 1em;
+		margin-left: 1em;
 	}
 }

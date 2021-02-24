@@ -52,8 +52,8 @@ export function Work() {
 									<img className={styles.brDot} src={itemDot} alt="" />
 								</Tilt>
 							<div className={styles.itemText}>
-								<h2>Scared cat</h2>
-								<p>Really scared of you</p>
+								<h2>The Game Changer</h2>
+								<p>Game more, sleep more</p>
 							</div>
 						</div>
 					</Link>

@@ -1,11 +1,12 @@
 @import 'global';
 @import 'animations';
-@import './tablet/work-tablet';
-@import './mobile/work-mobile';
+
+@import './tablet/work-item-tablet';
+@import './mobile/work-item-mobile';
 
 //desktop view
 
-@media (min-width: 1234px) {
+@media (min-width: 1401px) {
 
 	//contains the whole page
 	.container {
@@ -16,6 +17,11 @@
 		flex-direction: row;
 		justify-content: center;
 		z-index: 2;
+
+	}
+
+	.header p {
+		color:#FFCC00;
 	}
 
 	//this is the section with the header and nav
@@ -25,6 +31,7 @@
 		position: sticky;
 		top: 33.45vh;
 		align-self: flex-start;
+		width: 22rem;
 	}
 
 	//the title in this page -- WORK
@@ -47,16 +54,46 @@
 		display: flex;
 		flex-direction: row;
 		margin-top: 16rem;
-		margin-bottom: 12rem;
+		margin-bottom: 30rem;
 		flex-wrap: wrap;
 		width: 64.5rem;
+		height: auto;
 	}
 
 	//styling the content within the column class
-	.content {
+	.content p{
+		width: 30rem;
+		margin: 0.3rem 1rem 1rem 1rem;
+	}
+
+	.content h3{
+		margin:1rem 1rem 0 1rem;
+	}
+
+	.content{
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		opacity: 0;
+		animation-fill-mode: forwards;
+		animation-duration: 0.75s;
+		animation-name: headingOpacity;
+		transition-timing-function: ease;
+	}
+
+	.content p{
+
+		line-height: 1.4em;
+		letter-spacing: 0.012em;
+	}
+
+	.content div{
+		margin-top: 3em;
+	}
+
+	.content img{
+		height: 24.5rem;
+		margin: 3rem 1.5rem 1.5em 1.5rem;
 	}
 
 	//portfolio item
@@ -67,6 +104,12 @@
 		animation-duration: 0.75s;
 		animation-name: headingOpacity;
 		transition-timing-function: ease;
+		// width: 60rem;
+	}
+
+	.imageSize{
+		width: 29em;
+		align-self: flex-start;
 	}
 
 	//the outer dots in each far corner
@@ -83,23 +126,6 @@
 		transition-timing-function: ease-out;
 	}
 
-	//when you don't hover over the item, there is no text
-	.item div {
-		padding-top: 1em;
-		opacity: 0;
-		position: absolute;
-		transform: translate(-50%, -50%);
-		text-align: center;
-		transition: all 0.15s ease-out;
-	}
-
-	//on hover, it will show the title and subtitle of the project
-	.item:hover div {
-		position: absolute;
-		padding-top: 0;
-		opacity: 1;
-		transition: all 0.15s ease;
-	}
 
 	//styling of the title
 	.itemText {
@@ -111,20 +137,9 @@
 		transform: translate(-50%, -50%);
 		text-align: center;
 		transition: all 0.75s ease-out;
-		width: 25rem;
 	}
 
-	//when you don't hover over it, the opacity is normal
-	.item img {
-		opacity: 1;
-		transition: opacity 0.2s;
-	}
 
-	//on hover, opacity will lower, so you can see the description of the item easily
-	.item:hover .thumbnail {
-		opacity: 0.5;
-		transition: opacity 0.2s;
-	}
 
 	//when you hover over the item, there will appear dots around each corner, this is for the styling
 	.tiltItem {

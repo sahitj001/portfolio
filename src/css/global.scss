@@ -3,7 +3,27 @@
 //main colours
 $white : #c4c4c4;
 $bg : #111111;
+$red: #E52529;
 
+h1{
+  color: white;
+}
+
+h2{
+  color:white;
+}
+
+h3{
+	color:white;
+}
+
+.subtitle span{
+	color:$red;
+}
+
+p{
+  color:white;
+}
 
 //description of the page
 .subtitle {
@@ -68,6 +88,16 @@ $bg : #111111;
 	animation-duration: 0.75s;
 	animation-name: headingOpacity;
 	animation-delay:  0.6s;
+	transition-timing-function: ease;
+	}
+
+	//if there is a fourth link of the nav, it will be styled here
+.flexList li:nth-child(4) a{
+	opacity: 0;
+  animation-fill-mode: forwards;
+	animation-duration: 0.75s;
+	animation-name: headingOpacity;
+	animation-delay:  0.8s;
 	transition-timing-function: ease;
 	}
 
