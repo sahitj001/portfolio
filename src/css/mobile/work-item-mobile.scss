@@ -1,9 +1,15 @@
 @import '../global';
 @import '../animations';
 
-//tablet view
+//mobile view
 
-@media (max-width: 425px) {
+@media (max-width:320px){
+	.content p {
+		width: 18rem;
+		margin: 0.3rem 1rem 1rem 1rem;
+		line-height: 1.4em;
+	}
+
 	.header h1{
 		font-size: 1.75rem;
 	}
@@ -23,12 +29,21 @@
 		flex-wrap: wrap;
 	}
 
-	.header{
-		// margin-left: 1em;
-	}
-
 	.header p {
 		color: #FFCC00;
+		margin: 1em;
+	}
+
+	.header h1{
+		font-size: 1.6rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
+	.header h2{
+		font-size: 1.1rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
 	}
 
 	.flexList {
@@ -69,21 +84,9 @@
 		justify-content: center;
 	}
 
-	//styling the content within the column class
-	.content p {
-		width: 21rem;
-		margin: 0.3rem 1rem 1rem 1rem;
-		line-height: 1.4em;
-	}
-
 	.content h3 {
 		margin: 1rem 1rem 0 1rem;
 	}
-
-	// .imageSize {
-	// 	width: 15em;
-	// 	align-self: flex-start;
-	// }
 
 	.content {
 		display: flex;
@@ -94,11 +97,6 @@
 		animation-duration: 0.75s;
 		animation-name: headingOpacity;
 		transition-timing-function: ease;
-	}
-
-	.content p {
-		line-height: 1.4em;
-		letter-spacing: 0.012em;
 	}
 
 	.content div {
@@ -240,4 +238,228 @@
 		transform: scale(1.5, 1.5) rotate(180deg);
 	}
 
+}
+
+
+@media (min-width: 426px) {
+	.heading {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		align-self: center;
+		align-items: center;
+		justify-content: center;
+		margin-top: 10rem;
+	}
+
+	.header p {
+		color: #FFCC00;
+	}
+
+	.flexList {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.title {
+		padding: 0;
+		margin: 0;
+		font-size: 3.375rem;
+		font-weight: bold;
+		letter-spacing: 0.03em;
+	}
+
+	.container {
+		background-color: $bg;
+		display: flex;
+		position: relative;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		z-index: 2;
+
+	}
+
+	.content {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	//styling the content within the column class
+	.content p {
+		width: 30rem;
+		margin: 0.3rem 1rem 1rem 1rem;
+	}
+
+	.content h3 {
+		margin: 1rem 1rem 0 1rem;
+	}
+
+	.imageSize {
+		width: 29em;
+		align-self: flex-start;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		opacity: 0;
+		animation-fill-mode: forwards;
+		animation-duration: 0.75s;
+		animation-name: headingOpacity;
+		transition-timing-function: ease;
+	}
+
+	.content p {
+		line-height: 1.4em;
+		letter-spacing: 0.012em;
+	}
+
+	.content div {
+		margin-top: 3rem;
+	}
+
+	.content img {
+		height: 24.5rem;
+		margin: 3rem 1.5rem 1.5rem 1.5rem;
+	}
+
+	.column {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-bottom: 30rem;
+		flex-wrap: wrap;
+
+	}
+
+	.item {
+		position: relative;
+		opacity: 0;
+		animation-fill-mode: forwards;
+		animation-duration: 0.75s;
+		animation-name: headingOpacity;
+		transition-timing-function: ease;
+	}
+
+	.item div {
+		padding-top: 1em;
+		opacity: 0;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		transition: all 0.15s ease-out;
+	}
+
+	.item:hover div {
+		position: absolute;
+		padding-top: 0;
+		opacity: 1;
+		transition: all 0.15s ease;
+	}
+
+	.itemText {
+		top: 50%;
+		left: 50%;
+		padding-top: 1em;
+		opacity: 1;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		transition: all 0.75s ease-out;
+	}
+
+	.item img {
+		opacity: 1;
+		transition: opacity 0.2s;
+	}
+
+	.item:hover .thumbnail {
+		opacity: 0.5;
+		transition: opacity 0.2s;
+	}
+
+	.workDot {
+		display: flex;
+		position: absolute;
+		justify-content: center;
+		align-content: center;
+		width: 95%;
+		height: 95%;
+		z-index: -1;
+		animation-duration: 2.5s;
+		animation-name: gridExpand;
+		transition-timing-function: ease-out;
+	}
+
+	.tiltItem {
+		position: absolute;
+		display: flex;
+		width: 95%;
+		height: 95%;
+		transform: translate(-50%, -50%);
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		align-content: center;
+		justify-content: center;
+		margin: auto;
+		opacity: 1;
+		transition: opacity 0.1s;
+	}
+
+	.thumbnail {
+		width: 18rem;
+		margin: 1rem 1rem 1rem 1rem;
+	}
+
+	.backButton {
+		font-weight: 800;
+		list-style: none;
+		margin: 1em 1em 1em 1em;
+	}
+
+	.navItem {
+		margin: 1em 1em 1em 1em;
+	}
+
+	.trDot {
+		position: absolute;
+		right: 5%;
+		top: 5%;
+		transform: scale(1.5, 1.5);
+	}
+
+	.brDot {
+		position: absolute;
+		bottom: 5%;
+		right: 5%;
+		transform: scale(1.5, 1.5) rotate(90deg);
+	}
+
+	.tlDot {
+		position: absolute;
+		left: 5%;
+		top: 5%;
+		transform: scale(1.5, 1.5) rotate(270deg);
+	}
+
+	.blDot {
+		position: absolute;
+		left: 5%;
+		bottom: 5%;
+		transform: scale(1.5, 1.5) rotate(180deg);
+	}
+
+	.navItem {
+		margin-right: 1em;
+		margin-left: 1em;
+	}
 }
