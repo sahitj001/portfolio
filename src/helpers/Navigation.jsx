@@ -5,6 +5,7 @@ import {About} from '../components/About';
 import {Work} from '../components/Work';
 import {Tcg} from '../work-items/Tcg';
 import {PageNotFound} from '../components/PageNotFound';
+import {VMC} from '../components/VMC';
 
 export function Navigation() {
 
@@ -16,7 +17,8 @@ export function Navigation() {
 				<Route path="/work/tcg" component={Tcg}></Route>
     		<Route path="/about" exact component={About}></Route>
 				<Route path="/work" exact component={Work}></Route>
-				<Route path="*" component={PageNotFound}></Route>
+				<Route path="/work/VMC" exact component={VMC}></Route>
+				{/* <Route path="*" component={PageNotFound}></Route> */}
 			</Switch>
     </Router>
 	)

@@ -113,15 +113,22 @@
 
 	//when you hover over the elements EXCEPT FOR THE STRIPES AT THE RIGHT SIDE, they will scale
 	.tilt>div:hover {
-		// width: +10em;
 		background-color: $red;
-		transform: scale(1.2, 1.2);
 		transition: transform 1s ease-in-out;
 	}
 
 	//when you remove your cursor from an element, it will automatically return
 	//smoothly to its original state
 	.tilt>div {
+		transition: all 0.5s ease-in-out;
+	}
+
+	.stripes>div:hover{
+		background-color: $red;
+		transition: transform 1s ease-in-out;
+	}
+
+	.stripes>div {
 		transition: all 0.5s ease-in-out;
 	}
 
@@ -138,7 +145,7 @@
 	}
 
 	li:hover {
-		transform: scale(1.1, 1.1);
+		transform: scale(1.05, 1.05);
 	}
 
 	a {

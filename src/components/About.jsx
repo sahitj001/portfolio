@@ -13,7 +13,7 @@ export function About() {
 				<header className={styles.header}>
 					<h1 className={styles.title}>ABOUT</h1>
 					<h2 className={styles.subtitle}>JORDY SAHIT</h2>
-					<p>Focused on UX/Frontend</p>
+					<p>Focused on UX/UI</p>
 				</header>
 
 				<nav>

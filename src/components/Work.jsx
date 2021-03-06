@@ -58,7 +58,7 @@ export function Work() {
 						</div>
 					</Link>
 
-					<Link to="/work/tcg">
+					<Link to="/work/VMC">
 						<div className={styles.item}>
 							<img className={styles.thumbnail} src={cat} alt="" />
 								<Tilt className={styles.tiltItem} tiltMaxAngleX={5} tiltMaxAngleY={5} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
@@ -68,8 +68,8 @@ export function Work() {
 									<img className={styles.brDot} src={itemDot} alt="" />
 								</Tilt>
 							<div className={styles.itemText}>
-								<h2>Scared cat</h2>
-								<p>Really scared of you</p>
+								<h2>VMC</h2>
+								<p>Mobility on blockchain</p>
 							</div>
 						</div>
 					</Link>

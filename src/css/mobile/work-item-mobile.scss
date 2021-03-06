@@ -4,8 +4,25 @@
 //mobile view
 
 @media (max-width:320px){
+
+	.whiteImgBg{
+		background-color: white;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-top: 2rem;
+		justify-content: center;
+	}
+
+	.contentWrapper{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin-top: 2rem;
+	}
+
 	.content p {
-		width: 18rem;
 		margin: 0.3rem 1rem 1rem 1rem;
 		line-height: 1.4em;
 	}
@@ -30,7 +47,7 @@
 	}
 
 	.header p {
-		color: #FFCC00;
+		// color: #FFCC00;
 		margin: 1em;
 	}
 
@@ -97,10 +114,6 @@
 		animation-duration: 0.75s;
 		animation-name: headingOpacity;
 		transition-timing-function: ease;
-	}
-
-	.content div {
-		margin-top: 3em;
 	}
 
 	.content img {
@@ -215,6 +228,7 @@
 		right: 5%;
 		top: 5%;
 		transform: scale(1.5, 1.5);
+		display: none;
 	}
 
 	.brDot {
@@ -222,6 +236,7 @@
 		bottom: 5%;
 		right: 5%;
 		transform: scale(1.5, 1.5) rotate(90deg);
+		display: none;
 	}
 
 	.tlDot {
@@ -229,6 +244,7 @@
 		left: 5%;
 		top: 5%;
 		transform: scale(1.5, 1.5) rotate(270deg);
+		display: none;
 	}
 
 	.blDot {
@@ -236,12 +252,22 @@
 		left: 5%;
 		bottom: 5%;
 		transform: scale(1.5, 1.5) rotate(180deg);
+		display: none;
 	}
 
 }
 
 
-@media (min-width: 426px) {
+@media (max-width: 426px) {
+	.whiteImgBg{
+		background-color: white;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-top: 2rem;
+		justify-content: center;
+	}
+
 	.heading {
 		display: flex;
 		flex-direction: column;
@@ -250,10 +276,6 @@
 		align-items: center;
 		justify-content: center;
 		margin-top: 10rem;
-	}
-
-	.header p {
-		color: #FFCC00;
 	}
 
 	.flexList {
@@ -291,7 +313,7 @@
 
 	//styling the content within the column class
 	.content p {
-		width: 30rem;
+		width: 18rem;
 		margin: 0.3rem 1rem 1rem 1rem;
 	}
 
@@ -320,13 +342,11 @@
 		letter-spacing: 0.012em;
 	}
 
-	.content div {
-		margin-top: 3rem;
-	}
+
 
 	.content img {
-		height: 24.5rem;
-		margin: 3rem 1.5rem 1.5rem 1.5rem;
+		height: 22.5rem;
+		margin: 1rem 0 1.5rem 0;
 	}
 
 	.column {
@@ -334,7 +354,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-		margin-bottom: 30rem;
+		margin-bottom: 50rem;
 		flex-wrap: wrap;
 
 	}
@@ -435,6 +455,7 @@
 		right: 5%;
 		top: 5%;
 		transform: scale(1.5, 1.5);
+		display: none;
 	}
 
 	.brDot {
@@ -442,6 +463,7 @@
 		bottom: 5%;
 		right: 5%;
 		transform: scale(1.5, 1.5) rotate(90deg);
+		display: none;
 	}
 
 	.tlDot {
@@ -449,6 +471,7 @@
 		left: 5%;
 		top: 5%;
 		transform: scale(1.5, 1.5) rotate(270deg);
+		display: none;
 	}
 
 	.blDot {
@@ -456,6 +479,7 @@
 		left: 5%;
 		bottom: 5%;
 		transform: scale(1.5, 1.5) rotate(180deg);
+		display: none;
 	}
 
 	.navItem {

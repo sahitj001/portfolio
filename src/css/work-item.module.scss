@@ -6,7 +6,23 @@
 
 //desktop view
 
+.gda {
+	color: #FFCC00;
+}
+
 @media (min-width: 1401px) {
+	.contentWrapper{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-top: 2rem;
+	}
+
+	.blocky{
+		background-color: $white;
+		width: 1em;
+		height: 1em;
+	}
 
 	//contains the whole page
 	.container {
@@ -18,10 +34,6 @@
 		justify-content: center;
 		z-index: 2;
 
-	}
-
-	.header p {
-		color:#FFCC00;
 	}
 
 	//this is the section with the header and nav
@@ -60,6 +72,12 @@
 		height: auto;
 	}
 
+	.section{
+		margin-top: 10em;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
 	//styling the content within the column class
 	.content p{
 		width: 30rem;
@@ -82,13 +100,16 @@
 	}
 
 	.content p{
-
 		line-height: 1.4em;
 		letter-spacing: 0.012em;
 	}
 
-	.content div{
-		margin-top: 3rem;
+	.whiteImgBg{
+		background-color: white;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-top: 2rem;
 	}
 
 	.content img{
