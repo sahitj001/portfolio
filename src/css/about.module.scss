@@ -2,6 +2,35 @@
 @import 'animations';
 
 @media (min-width: 1024px){
+	.tech p:nth-child(1){
+		opacity: 0;
+		animation-fill-mode: forwards;
+		animation-duration: 0.75s;
+		animation-name: headingOpacity;
+		animation-delay:  1s;
+		transition-timing-function: ease;
+		color: #626262;
+	}
+
+	.tech p:nth-child(2){
+		opacity: 0;
+		animation-fill-mode: forwards;
+		animation-duration: 0.75s;
+		animation-name: headingOpacity;
+		animation-delay:  1.2s;
+		transition-timing-function: ease;
+	}
+
+	.tech p:nth-child(3){
+		opacity: 0;
+		animation-fill-mode: forwards;
+		animation-duration: 0.75s;
+		animation-name: headingOpacity;
+		animation-delay:  1.4s;
+		transition-timing-function: ease;
+		color: #626262;
+	}
+
 	.title {
 		padding:0;
 		margin: 0;
@@ -21,6 +50,8 @@
 	justify-content: center;
 	z-index: 2;
 }
+
+
 
 .iconSection{
 display: flex;

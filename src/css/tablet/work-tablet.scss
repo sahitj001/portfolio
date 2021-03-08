@@ -9,9 +9,16 @@
 		margin: 1rem 1rem 1rem 1rem;
 	}
 
+	.tech p{
+		display: none;
+	}
 }
 
 @media (max-width: 1234px) {
+	.tech p{
+		display: none;
+	}
+
 	.heading {
 		display: flex;
 		flex-direction: column;

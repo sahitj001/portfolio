@@ -10,7 +10,56 @@
 	color: #FFCC00;
 }
 
+
+
 @media (min-width: 1401px) {
+	.tech p:nth-child(1){
+		opacity: 0;
+		animation-fill-mode: forwards;
+		animation-duration: 0.75s;
+		animation-name: headingOpacity;
+		animation-delay:  1s;
+		transition-timing-function: ease;
+		color: #626262;
+	}
+
+	.tech p:nth-child(2){
+		opacity: 0;
+		animation-fill-mode: forwards;
+		animation-duration: 0.75s;
+		animation-name: headingOpacity;
+		animation-delay:  1.2s;
+		transition-timing-function: ease;
+		color: #626262;
+	}
+
+	.tech p:nth-child(3){
+		opacity: 0;
+		animation-fill-mode: forwards;
+		animation-duration: 0.75s;
+		animation-name: headingOpacity;
+		animation-delay:  1.4s;
+		transition-timing-function: ease;
+	}
+
+	.tech p:nth-child(4){
+		opacity: 0;
+		animation-fill-mode: forwards;
+		animation-duration: 0.75s;
+		animation-name: headingOpacity;
+		animation-delay:  1.6s;
+		transition-timing-function: ease;
+	}
+
+	.tech p:nth-child(5){
+		opacity: 0;
+		animation-fill-mode: forwards;
+		animation-duration: 0.75s;
+		animation-name: headingOpacity;
+		animation-delay:  1.8s;
+		transition-timing-function: ease;
+	}
+
 	.contentWrapper{
 		display: flex;
 		flex-direction: row;
@@ -65,7 +114,7 @@
 		position: relative;
 		display: flex;
 		flex-direction: row;
-		margin-top: 16.5rem;
+		margin-top: 17.5rem;
 		margin-bottom: 30rem;
 		flex-wrap: wrap;
 		width: 64.5rem;
@@ -145,6 +194,7 @@
 		animation-duration: 2.5s;
 		animation-name: gridExpand;
 		transition-timing-function: ease-out;
+		user-select: none;
 	}
 
 

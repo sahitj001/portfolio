@@ -5,6 +5,7 @@ $white : #c4c4c4;
 $bg : #111111;
 $red: #E52529;
 
+
 h1{
   color: white;
 }
@@ -53,13 +54,14 @@ p{
 	display:flex;
 	position: absolute;
 	align-content: center;
-	width: 95%;
-	height: 95%;
+	width: 93%;
+	height: 93%;
 	z-index: -1;
 	background-color: none;
 	animation-duration: 2.5s;
 	animation-name: gridExpand;
 	transition-timing-function: ease-out;
+	user-select: none;
 }
 
 //first link of the nav
@@ -109,18 +111,32 @@ p{
 	animation-duration: 0.75s;
 	animation-name: headingOpacity;
 	transition-timing-function: ease;
+	user-select: none;
 }
 
-//class that makes the outer dots tilt when you move around
-.tiltDot {
+.tech{
 	display: flex;
 	position: absolute;
-	align-content: center;
-	width: 93%;
-	height: 93%;
-	z-index: -1;
-	background-color: none;
-	animation-duration: 2.5s;
-	animation-name: gridExpand;
-	transition-timing-function: ease-out;
+	font-weight: 200;
+	font-size: 0.7rem;
+	// color: $red;
+	top:4.9%;
+	right:6%;
+	user-select: none;
 }
+
+.tech p{
+	margin-left: 0.2rem;
+	margin-right: 0.2rem;
+}
+
+
+
+	li:hover a{
+		color:$red;
+		transition: 0.35s ;
+	}
+
+	li a{
+		transition: 0.35s ;
+	}

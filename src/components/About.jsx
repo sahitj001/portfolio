@@ -2,7 +2,6 @@ import React from "react"
 import styles from '../css/about.module.scss'
 import { Route, BrowserRouter as Router, Link } from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
-import cat from '../assets/images/cat.bmp';
 import dot from '../assets/images/about-dot.svg';
 
 export function About() {
@@ -36,6 +35,12 @@ export function About() {
 					<img src={dot} className={styles.tlDot} alt=""/>
 					<img src={dot} className={styles.blDot} alt=""/>
 					<img src={dot} className={styles.brDot} alt=""/>
+
+				<div className={styles.tech}>
+					<p>HOME</p>
+					<p>ABOUT</p>
+					<p>WORK</p>
+				</div>
 				</Tilt>
 
 			<div className={styles.content}>

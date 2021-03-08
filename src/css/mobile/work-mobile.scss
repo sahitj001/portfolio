@@ -4,6 +4,10 @@
 //mobile view
 
 @media (max-width: 425px) {
+	.tech{
+		display: none;
+	}
+
 	.heading {
 		display: flex;
 		flex-direction: column;

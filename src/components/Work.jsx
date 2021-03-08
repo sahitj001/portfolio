@@ -14,7 +14,7 @@ export function Work() {
 				<header className={styles.header}>
 					<h1 className={styles.title}>WORK</h1>
 					<h2 className={styles.subtitle}>JORDY SAHIT</h2>
-					<p>Focused on UX/UIii</p>
+					<p>Focused on UX/UI</p>
 				</header>
 
 				<nav>
@@ -38,6 +38,12 @@ export function Work() {
 				<img className={styles.blDot} src={workDot} alt="" />
 				<img className={styles.trDot} src={workDot} alt="" />
 				<img className={styles.brDot} src={workDot} alt="" />
+
+				<div className={styles.tech}>
+				<p>HOME</p>
+				<p>ABOUT</p>
+				<p>WORK</p>
+				</div>
 			</Tilt>
 
 			<div className={styles.content}>

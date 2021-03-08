@@ -5,14 +5,13 @@ import {About} from '../components/About';
 import {Work} from '../components/Work';
 import {Tcg} from '../work-items/Tcg';
 import {PageNotFound} from '../components/PageNotFound';
-import {VMC} from '../components/VMC';
+import {VMC} from '../work-items/VMC';
 
 export function Navigation() {
 
 	return (
     <Router>
 			<Switch>
-    		{/* <Route path="/" exact render={props => ( <Index {...props} setEmail(email)/> )}></Route> */}
 				<Route path="/" exact component={Index}></Route>
 				<Route path="/work/tcg" component={Tcg}></Route>
     		<Route path="/about" exact component={About}></Route>

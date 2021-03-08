@@ -33,6 +33,12 @@ export function Index(props) {
 					<div className={styles.blDot}></div>
 					<div className={styles.trDot}></div>
 					<div className={styles.brDot}></div>
+
+				<div className={styles.tech}>
+					<p>HOME</p>
+					<p>ABOUT</p>
+					<p>WORK</p>
+				</div>
 				</Tilt>
 
 				<Tilt className={styles.tilt} tiltMaxAngleX={1} tiltMaxAngleY={1} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>

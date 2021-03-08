@@ -4,6 +4,10 @@
 //tablet view
 
 @media (max-width: 1400px) {
+	.tech p{
+		display: none;
+	}
+
 	.contentWrapper{
 		display: flex;
 		flex-direction: row;

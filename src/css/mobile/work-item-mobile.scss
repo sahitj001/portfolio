@@ -4,6 +4,9 @@
 //mobile view
 
 @media (max-width:320px){
+	.tech p{
+		display: none;
+	}
 
 	.whiteImgBg{
 		background-color: white;
@@ -259,6 +262,10 @@
 
 
 @media (max-width: 426px) {
+	.tech p{
+		display: none;
+	}
+
 	.whiteImgBg{
 		background-color: white;
 		display: flex;
