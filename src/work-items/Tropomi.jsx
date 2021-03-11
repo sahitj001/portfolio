@@ -86,7 +86,7 @@ export function Tropomi() {
 								of air pollution.
 						</p>
 
-							<h3>What is the KNMI?</h3>
+							<h3>KNMI?</h3>
 							<p>
 								The KNMI provides reliable and consistent measurements, data and forecasts that
 								form the basis of important decisions that keep the Netherlands safe. From a
