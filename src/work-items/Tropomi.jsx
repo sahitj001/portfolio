@@ -86,7 +86,7 @@ export function Tropomi() {
 								of air pollution.
 						</p>
 
-							<h3>KNMI?</h3>
+							<h3>KNMI</h3>
 							<p>
 								The KNMI provides reliable and consistent measurements, data and forecasts that
 								form the basis of important decisions that keep the Netherlands safe. From a
@@ -110,8 +110,8 @@ export function Tropomi() {
 					<div className={styles.contentWrapper}>
 						<div>
 							<h3>The solution</h3>
-							<p>We made a tool where you can compare countries' COVID-19 measures against each other. When you hover over a timeframe
-							, you will which COVID-19 measure was applied. Aside from seeing it when hovering, there are also bars at the bottom of the visualisation
+							<p>We made a tool where you can compare countries' COVID-19 measures against each other. Due to the limited data we collected, we only had information about a small number of countries in Asia and Europe.
+								When you hover over a timeframe, you will see which COVID-19 measure was applied. Aside from seeing it when hovering, there are also bars at the bottom of the visualisation
 							that show you how long a measure lasted. Since this is a quite complex tool to use, we also designed a tutorial section before making use of
 							the datavisualisation.
 							</p>
