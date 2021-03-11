@@ -47,8 +47,7 @@ export function Tcg() {
 				<img className={styles.brDot} src={workDot} alt="" />
 
 				<div className={styles.tech}>
-				<p>HOME</p>
-				<p>ABOUT</p>
+				<p>LOCATION:</p>
 				<p>WORK</p>
 				<p>//</p>
 				<p>THE GAME CHANGER</p>

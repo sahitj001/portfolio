@@ -35,9 +35,8 @@ export function Index(props) {
 					<div className={styles.brDot}></div>
 
 				<div className={styles.tech}>
+					<p>LOCATION:</p>
 					<p>HOME</p>
-					<p>ABOUT</p>
-					<p>WORK</p>
 				</div>
 				</Tilt>
 

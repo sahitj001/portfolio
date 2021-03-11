@@ -37,9 +37,8 @@ export function About() {
 					<img src={dot} className={styles.brDot} alt=""/>
 
 				<div className={styles.tech}>
-					<p>HOME</p>
+					<p>LOCATION:</p>
 					<p>ABOUT</p>
-					<p>WORK</p>
 				</div>
 				</Tilt>
 
@@ -48,14 +47,13 @@ export function About() {
 					<h2>Who am I?</h2>
 					<div className={styles.iconSection}>
 					<p>Portofolio designed by myself and made with ❤️ on React</p>
-					<ion-icon className={styles.reactLogo} name="logo-react"></ion-icon>
 					</div>
 
 				</div>
 
 				<div className={styles.column}>
 					<h2>Who am I?</h2>
-					<p>Some say I am a legend. But it do be like that.</p>
+					<p>test</p>
 				</div>
 			</div>
 
