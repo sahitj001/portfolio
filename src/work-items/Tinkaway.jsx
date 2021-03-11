@@ -76,7 +76,12 @@ export function Tinkaway() {
 							and they also offer taking the lead upon projects.
 							It is Tinkaway's goal to make sure that you as a company keeps growing.
 						</p>
+						</div>
 
+						<div>
+						<h3>Design Challenge</h3>
+						<p>Design a website according to the branding guidelines of Tinkaway.
+						</p>
 						</div>
 
 					</div>

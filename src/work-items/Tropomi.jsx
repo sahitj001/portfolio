@@ -77,23 +77,17 @@ export function Tropomi() {
 							<p>
 								For one of my semesters I was following a course on Information Design. In this course we learn
 								a lot about datavisualisations. We learn how they work, are applied and when they should be applied.
+								In this course we had the KNMI as our client.
 						</p>
 
-							<p>
-								The KNMI has commissioned me (and my team) to create an interactive,
-								insightful tool so that policymakers and the general public can better
-								understand what changing collective behavior can contribute to the reduction
-								of air pollution.
-						</p>
-
-							<h3>KNMI</h3>
 							<p>
 								The KNMI provides reliable and consistent measurements, data and forecasts that
 								form the basis of important decisions that keep the Netherlands safe. From a
 								code red for road traffic to the climate scenarios for the Delta Program,
 								involving billions of euros, for a safe Netherlands that is prepared for the
 								impact of weather, climate and earthquakes.
-						</p>
+							</p>
+
 						</div>
 
 						<div>
@@ -111,7 +105,7 @@ export function Tropomi() {
 						<div>
 							<h3>The solution</h3>
 							<p>We made a tool where you can compare countries' COVID-19 measures against each other. Due to the limited data we collected, we only had information about a small number of countries in Asia and Europe.
-								When you hover over a timeframe, you will see which COVID-19 measure was applied. Aside from seeing it when hovering, there are also bars at the bottom of the visualisation
+							When you hover over a timeframe, you will see which COVID-19 measure was applied. Aside from seeing it when hovering, there are also bars at the bottom of the visualisation
 							that show you how long a measure lasted. Since this is a quite complex tool to use, we also designed a tutorial section before making use of
 							the datavisualisation.
 							</p>

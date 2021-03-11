@@ -89,15 +89,21 @@ export function Itsavirus() {
 								and cooperate.
 						</p>
 						</div>
+
+						<div>
+							<h3>Design Challenge</h3>
+							<p>Design a website for VMC. The website has to have a clean look and feel.</p>
+						</div>
 					</div>
 
 
 					<div className={styles.contentWrapper}>
 						<div>
 							<h3>The design</h3>
-							<p>Itsavirus requested a clean website. By laying the emphasis on 'less is more', I designed and built a website
+							<p>By laying the emphasis on 'less is more', I designed and built a website
 							where the textual content is the primary focus. A picture is worth more than a thousand words, so another challenge was
-							that I had to illustrate for my design. These illustrations make it more clear what VMC does.
+							that I had to illustrate for my design. I got my inspiration from other websites that focus on blockchain. They all got this
+							'flat design'-ish look to them so I made the same kind of illustrations. These illustrations make it more clear what VMC does.
 					</p>
 						</div>
 					</div>
