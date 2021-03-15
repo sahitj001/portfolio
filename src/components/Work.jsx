@@ -77,7 +77,7 @@ export function Work() {
 								<img className={styles.brDot} src={itemDot} alt="" />
 							</Tilt>
 							<div className={styles.itemText}>
-								<h2>COVID-19 measure comparison tool</h2>
+								<h2>KNMI: COVID-19 measure comparison tool</h2>
 								<p>How lockdown measures in Europe and Asia changed nitrogen dioxide emissions.</p>
 							</div>
 						</div>

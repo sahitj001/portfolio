@@ -64,7 +64,7 @@ export function Itsavirus() {
 					<div className={styles.contentWrapper}>
 						<div>
 							<h3>My role</h3>
-							<p>UI/UX/Front-end</p>
+							<p>UI/Front-end</p>
 							<p>WORKED ON: Desk research, User Research, Concepting, Testing, Prototyping, Design Guide</p>
 
 						</div>

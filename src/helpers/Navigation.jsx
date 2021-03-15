@@ -10,7 +10,6 @@ import {Tropomi} from '../work-items/Tropomi';
 import {Tinkaway} from '../work-items/Tinkaway';
 
 export function Navigation() {
-
 	return (
     <Router>
 			<Switch>

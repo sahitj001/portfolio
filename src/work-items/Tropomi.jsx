@@ -93,7 +93,7 @@ export function Tropomi() {
 						<div>
 							<h3>Design Challenge</h3>
 							<p>
-								What consequences has the corona virus had on the air pollution of our
+								What consequences has the coronavirus had on the air pollution of our
 								world? In what way do we show in an interactive way how
 								changing collective behavior can reduce air pollution?
 						</p>

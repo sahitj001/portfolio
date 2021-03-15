@@ -5,7 +5,7 @@ import Tilt from 'react-parallax-tilt';
 
 
 export function Index(props) {
-	console.log(props.email)
+
 	return (
 
 			<div className={styles.container}>
