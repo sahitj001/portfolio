@@ -3,6 +3,7 @@ import styles from '../css/about.module.scss'
 import { Route, BrowserRouter as Router, Link } from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
 import dot from '../assets/images/about-dot.svg';
+import video from '../assets/travell.mp4';
 
 export function About() {
 	return (
@@ -30,31 +31,55 @@ export function About() {
 				</nav>
 			</div>
 
-			<Tilt className={styles.tiltDot} tiltMaxAngleX={2} tiltMaxAngleY={2}  trackOnWindow={true} tiltReverse={true} transitionSpeed={2500}>
-					<img src={dot} className={styles.trDot} alt=""/>
-					<img src={dot} className={styles.tlDot} alt=""/>
-					<img src={dot} className={styles.blDot} alt=""/>
-					<img src={dot} className={styles.brDot} alt=""/>
+			<Tilt className={styles.tiltDot} tiltMaxAngleX={2} tiltMaxAngleY={2} trackOnWindow={true} tiltReverse={true} transitionSpeed={2500}>
+				<img src={dot} className={styles.trDot} alt="" />
+				<img src={dot} className={styles.tlDot} alt="" />
+				<img src={dot} className={styles.blDot} alt="" />
+				<img src={dot} className={styles.brDot} alt="" />
 
 				<div className={styles.tech}>
 					<p>LOCATION:</p>
 					<p>ABOUT</p>
 				</div>
-				</Tilt>
+
+				<div className={styles.extra}>
+					<p>PORTFOLIO DESIGNED AND CODED BY ME. BUILT ON REACT</p>
+
+				</div>
+			</Tilt>
 
 			<div className={styles.content}>
 				<div className={styles.column}>
-					<h2>Who am I?</h2>
-					<div className={styles.iconSection}>
-					<p>Portofolio designed by myself and made with ❤️ on React</p>
+
+					<div className={styles.contentWrapper}>
+
+
+
+						<div>
+							<p>I am a UX designer that wants to make the digital world a better place
+							for everyone. I love seeing how a small idea transforms into a complete
+							concept. Having the traits of an explorer, I love to solve challenging
+							problems. Collaborating with a team is the way to go but I also can work as
+							a solo designer. I excel in user research, but I like to be involved all
+							phases of the design process.</p>
+
+							<p>
+								As an explorer, I always try to grow and learn something new. I have been diving
+								into coding, but aside from that I am always trying to learn new things about design.
+								If I am not designing you'll find me in the gym doing powerlifting-focused training
+								four to six times a week. I also like to travel. My most recent trips were to Japan, the UK and South-Korea.
+								When COVID-19 is finally under control, I want to keep travelling and see more of Asia.
+							</p>
+
+
+
+						</div>
+
 					</div>
+					<video className={styles.travelVideo} src={video} autoPlay={true} loop={true} muted></video>
 
 				</div>
 
-				<div className={styles.column}>
-					<h2>Who am I?</h2>
-					<p>test</p>
-				</div>
 			</div>
 
 

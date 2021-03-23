@@ -151,6 +151,22 @@ p{
 	margin-right: 0.2rem;
 }
 
+.extra{
+	display: flex;
+	position: absolute;
+	font-weight: 200;
+	font-size: 0.7rem;
+	user-select: none;
+
+	bottom: 4.15%;
+	right:6%;
+
+}
+
+.extra p{
+	color:$grey;
+}
+
 
 
 	li:hover a{

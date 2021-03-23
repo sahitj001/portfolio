@@ -1,7 +1,12 @@
 @import 'global';
 @import 'animations';
 
-@media (min-width: 1024px){
+@import './tablet/about-tablet.scss';
+@import './mobile/about-mobile.scss';
+
+//desktop view
+
+@media (min-width: 1401px) {
 	.tech p:nth-child(1){
 		opacity: 0;
 		animation-fill-mode: forwards;
@@ -19,119 +24,247 @@
 		animation-name: headingOpacity;
 		animation-delay:  1.2s;
 		transition-timing-function: ease;
+
 	}
 
+	.tech p:nth-child(3){
+		opacity: 0;
+		animation-fill-mode: forwards;
+		animation-duration: 0.75s;
+		animation-name: headingOpacity;
+		animation-delay:  1.4s;
+		transition-timing-function: ease;
+	}
+
+	.tech p:nth-child(4){
+		opacity: 0;
+		animation-fill-mode: forwards;
+		animation-duration: 0.75s;
+		animation-name: headingOpacity;
+		animation-delay:  1.6s;
+		transition-timing-function: ease;
+	}
+
+	.extra p:first-child{
+		opacity: 0;
+		animation-fill-mode: forwards;
+		animation-duration: 0.75s;
+		animation-name: headingOpacity;
+		animation-delay:  1.8s;
+		transition-timing-function: ease;
+	}
+
+	.contentWrapper{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-top: 2rem;
+	}
+
+	//contains the whole page
+	.container {
+		background-color: $bg;
+		display: flex;
+		position: relative;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+		z-index: 2;
+
+	}
+
+	//this is the section with the header and nav
+	.heading {
+		display: flex;
+		flex-direction: column;
+		position: sticky;
+		top: 33.45vh;
+		align-self: flex-start;
+		width: 22rem;
+	}
+
+	//the title in this page -- WORK
 	.title {
-		padding:0;
+		padding: 0;
 		margin: 0;
 		font-size: 3.375rem;
 		font-weight: bold;
 		letter-spacing: 0.03em;
 	}
 
-.container {
-	background-color: $bg;
-	display: flex;
-	height:100vh;
-	position: relative;
-	align-items: center;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;
-	z-index: 2;
+	//flexing the nav with this class
+	.flexList {
+		flex-direction: column;
+	}
+
+	//i made a class column so that i can add more columns later if i want to
+	.column {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		margin-top: 16.75rem;
+		margin-bottom: 30rem;
+		flex-wrap: wrap;
+		width: 64.5rem;
+		height: auto;
+	}
+
+	.section{
+		margin-top: 10em;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	//styling the content within the column class
+	.content p{
+		width: 30rem;
+		margin: 0.3rem 1rem 1rem 1rem;
+	}
+
+	.travelVideo{
+		width:63rem;
+	}
+
+	.content h3{
+		margin:1.75rem 1rem 0 1rem;
+	}
+
+	.content{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		opacity: 0;
+		animation-fill-mode: forwards;
+		animation-duration: 0.75s;
+		animation-name: headingOpacity;
+		transition-timing-function: ease;
+	}
+
+	.content p{
+		line-height: 1.4em;
+		letter-spacing: 0.012em;
+	}
+
+	.whiteImgBg{
+		background-color: white;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-top: 2rem;
+		justify-content: center;
+	}
+
+	.content img{
+		height: 24.5rem;
+		margin: 3rem 1.5rem 1.5em 1.5rem;
+	}
+
+	//portfolio item
+	.item {
+		position: relative;
+		opacity: 0;
+		animation-fill-mode: forwards;
+		animation-duration: 0.75s;
+		animation-name: headingOpacity;
+		transition-timing-function: ease;
+		// width: 60rem;
+	}
+
+	.imageSize{
+		width: 29em;
+		align-self: flex-start;
+	}
+
+	//the outer dots in each far corner
+	.workDot {
+		display: flex;
+		position: absolute;
+		justify-content: center;
+		align-content: center;
+		width: 95%;
+		height: 95%;
+		z-index: -1;
+		animation-duration: 2.5s;
+		animation-name: gridExpand;
+		transition-timing-function: ease-out;
+		user-select: none;
+	}
+
+
+	//styling of the title
+	.itemText {
+		top: 50%;
+		left: 50%;
+		padding-top: 1em;
+		opacity: 1;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		text-align: center;
+		transition: all 0.75s ease-out;
+	}
+
+
+
+	//when you hover over the item, there will appear dots around each corner, this is for the styling
+	.tiltItem {
+		position: absolute;
+		display: flex;
+		width: 93%;
+		height: 93%;
+		transform: translate(-50%, -50%);
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		align-content: center;
+		justify-content: center;
+		margin: auto;
+		opacity: 1;
+		transition: opacity 0.1s;
+	}
+
+	//styling of the item size
+	.thumbnail {
+		width: 30rem;
+		margin: 1rem 1rem 1rem 1rem;
+	}
+
+	//back button of the nav
+	.backButton {
+		font-weight: 800;
+		list-style: none;
+		margin-bottom: 1em;
+	}
+
+	//top right triangle
+	.trDot {
+		position: absolute;
+		right: 5%;
+		top: 5%;
+		transform: scale(1.5, 1.5);
+	}
+
+	// bottom right triangle
+	.brDot {
+		position: absolute;
+		bottom: 5%;
+		right: 5%;
+		transform: scale(1.5, 1.5) rotate(90deg);
+	}
+
+	/* top left triangle */
+	.tlDot {
+		position: absolute;
+		left: 5%;
+		top: 5%;
+		transform: scale(1.5, 1.5) rotate(270deg);
+	}
+
+	/* bottom left triangle */
+	.blDot {
+		position: absolute;
+		left: 5%;
+		bottom: 5%;
+		transform: scale(1.5, 1.5) rotate(180deg);
+	}
 }
-
-
-
-.iconSection{
-display: flex;
-justify-content: center;
-flex-direction: column;
-}
-
-ion-icon {
-	display: flex;
-	width: 1rem;
-	height: 1rem;
-  color: $white;
-	align-items: center;
-	margin: auto;
-}
-
-.tilt img {
-	animation-duration: 1.5s;
-	animation-name: opacity;
-}
-
-.column{
-	position:relative;
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	min-width: 13rem;
-	width:22rem;
-	flex-wrap: wrap;
-}
-
-h2{
-	margin:0;
-}
-
-.heading{
-	display: flex;
-	flex-direction: column;
-	position: sticky;
-	align-self: center;
-	padding-right: 11rem;
-}
-
-ul li {
-	/* top right bottom left */
-	margin: 1.5em 2em 0em 5em;
-	transition: all .2s ease-in-out;
-}
-
-.trDot {
-	position: absolute;
-	right: 5%;
-	top: 5%;
-	transform:scale(1.5, 1.5);
-
-}
-
-.brDot {
-	position: absolute;
-	bottom: 5%;
-	right: 5%;
-	transform:scale(1.5, 1.5) rotate(90deg);
-}
-
-/* top left triangle */
-.tlDot {
-	position: absolute;
-	left: 5%;
-	top: 5%;
-	transform:scale(1.5, 1.5) rotate(270deg);
-}
-
-/* bottom left triangle */
-.blDot {
-	position: absolute;
-	left: 5%;
-	bottom: 5%;
-	transform:scale(1.5, 1.5) rotate(180deg);
-}
-
-.backButton{
-	font-weight: 800;
-	list-style: none;
-}
-
-.content{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-}
-
