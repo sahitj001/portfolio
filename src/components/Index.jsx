@@ -4,7 +4,7 @@ import Tilt from 'react-parallax-tilt';
 
 
 
-export function Index(props) {
+export function Index() {
 
 	return (
 
