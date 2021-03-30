@@ -1,31 +1,28 @@
-@keyframes opacity{
+//letting the outer dots expand slowly
+@keyframes gridExpand {
 	from {
-		transform: scale(0,0);
+		width: 70%;
+		height: 80%;
 		opacity: 0;
 	}
 }
 
-//letting the outer dots expand slowly
-@keyframes gridExpand{
-	from{
-		width:70%;
-		height:80%;
-		opacity:0;
-	}
-}
-
-//heading animation
-@keyframes headingOpacity{
-	0%{
+//heading animation, is also used on other elements on multiple pages.
+//what it basically does is that the elements start a bit lower when initiated.
+//they also have 0 opacity at the start so they fade to full opacity and also move a tad upside
+@keyframes headingOpacity {
+	0% {
 		opacity: 0;
 		margin-top: 1.5em;
 	}
-	100%{
+
+	100% {
 		margin-top: 0em;
 		opacity: 1;
 	}
 }
 
+//making the rectangles in the main page grow from size with a smooth transition
 @keyframes grow {
 	from {
 		height: 0;
@@ -33,18 +30,11 @@
 	}
 }
 
-//
-@keyframes expandFromRight{
+//expand most right rectangles at the main screen
+@keyframes expandFromRight {
 	from {
-		right:0;
+		right: 0;
 		opacity: 0;
 		width: 0;
 	}
 }
-
-@keyframes scaleNav {
-	from {
-		transform: scale=0;
-	}
-}
-

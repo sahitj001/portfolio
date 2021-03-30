@@ -121,7 +121,6 @@
 
 	//when you hover over the elements EXCEPT FOR THE STRIPES AT THE RIGHT SIDE, they will scale
 	.tilt>div:hover {
-		// width: +10em;
 		background-color: #E52529;
 		transform: scale(1.2, 1.2);
 		transition: transform 1s ease-in-out;

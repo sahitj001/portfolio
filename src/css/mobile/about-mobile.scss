@@ -3,20 +3,20 @@
 
 //mobile view
 
-@media (max-width:320px){
-	.tech p{
+@media (max-width:320px) {
+	.tech p {
 		display: none;
 	}
 
-	.travelVideo{
-		width:19rem;
+	.travelVideo {
+		width: 18rem;
 	}
 
-	.extra p{
+	.extra p {
 		display: none;
 	}
 
-	.whiteImgBg{
+	.whiteImgBg {
 		background-color: white;
 		display: flex;
 		flex-direction: row;
@@ -25,25 +25,29 @@
 		justify-content: center;
 	}
 
-	.contentWrapper{
+	.contentWrapper {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-
 		margin-top: 2rem;
 	}
 
 	.content p {
 		margin: 0.3rem 1rem 1rem 1rem;
 		line-height: 1.4em;
+		width: 17.5rem;
 	}
 
-	.header h1{
-		font-size: 1.75rem;
+	.header h1 {
+		font-size: $h1m;
+		margin-left: 1rem;
+		margin-right: 1rem;
 	}
 
-	.header h2{
-		font-size: 1.2rem;
+	.header h2 {
+		font-size: $h2m;
+		margin-left: 1rem;
+		margin-right: 1rem;
 	}
 
 	.heading {
@@ -53,25 +57,13 @@
 		align-self: center;
 		align-items: center;
 		justify-content: center;
-		margin-top: 15em;
+		margin-top: 15rem;
 		flex-wrap: wrap;
 	}
 
 	.header p {
 		// color: #FFCC00;
 		margin: 1em;
-	}
-
-	.header h1{
-		font-size: 1.6rem;
-		margin-left: 1rem;
-		margin-right: 1rem;
-	}
-
-	.header h2{
-		font-size: 1.1rem;
-		margin-left: 1rem;
-		margin-right: 1rem;
 	}
 
 	.flexList {
@@ -81,7 +73,7 @@
 	}
 
 	.flexList li {
-		margin:0.5rem;
+		margin: 0.5rem;
 	}
 
 	.title {
@@ -269,16 +261,24 @@
 }
 
 
-@media (max-width: 426px) {
-	.tech p{
+@media (min-width:321px) and (max-width: 426px) {
+	.tech p {
 		display: none;
 	}
 
-	.travelVideo {
-		width:24rem;
+	.header h1 {
+		font-size: $h1m;
 	}
 
-	.whiteImgBg{
+	.header h2 {
+		font-size: $h2m;
+	}
+
+	.travelVideo {
+		width: 24rem;
+	}
+
+	.whiteImgBg {
 		background-color: white;
 		display: flex;
 		flex-direction: row;
@@ -332,7 +332,7 @@
 
 	//styling the content within the column class
 	.content p {
-		width: 18rem;
+		width: 17rem;
 		margin: 0.3rem 1rem 1rem 1rem;
 	}
 
@@ -359,6 +359,7 @@
 	.content p {
 		line-height: 1.4em;
 		letter-spacing: 0.012em;
+		width: 20.5rem;
 	}
 
 

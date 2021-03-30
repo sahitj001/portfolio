@@ -47,47 +47,47 @@ export function Tcg() {
 				<img className={styles.brDot} src={workDot} alt="" />
 
 				<div className={styles.tech}>
-				<p>LOCATION:</p>
-				<p>WORK</p>
-				<p>//</p>
-				<p>THE GAME CHANGER</p>
+					<p>LOCATION:</p>
+					<p>WORK</p>
+					<p>//</p>
+					<p>THE GAME CHANGER</p>
 				</div>
 			</Tilt>
 
 
 			<div className={styles.column}>
 				<section className={styles.content}>
-				<div className={styles.contentWrapper}>
-					<div>
-						<h3>My role</h3>
-						<p>UI/UX</p>
-						<p>WORKED ON: Desk research, User Research, Concepting, Testing, Prototyping</p>
+					<div className={styles.contentWrapper}>
+						<div>
+							<h3>My role</h3>
+							<p>UI/UX</p>
+							<p>WORKED ON: Desk research, User Research, Concepting, Testing, Prototyping</p>
 
-					</div>
+						</div>
 
-					<div>
-						<h3>Type of product</h3>
-						<p>Physical product</p>
-					</div>
+						<div>
+							<h3>Type of product</h3>
+							<p>Physical product</p>
+						</div>
 					</div>
 
 					<div className={styles.contentWrapper}>
-					<div>
-						<h3>The problem</h3>
-						<p>Young children have a lot of free time. They can choose to play outside
-						but also can game whenever they want. They often spend multiple hours gaming in a row.
-						These long sessions of gaming could make them end up being game addicts. Gaming too much could
-						lead to sleep deprivation.
+						<div>
+							<h3>The problem</h3>
+							<p>Young children have a lot of free time. They can choose to play outside
+							but also can game whenever they want. They often spend multiple hours gaming in a row.
+							These long sessions of gaming could make them end up being game addicts. Gaming too much could
+							lead to sleep deprivation.
 								</p>
-					</div>
+						</div>
 
-					<div>
-						<h3>Design Challenge</h3>
-						<p>Design a product that positively stimulates the gaming behaviour of children between
-						six and twelve years old. It was quite a challenge to design the UX of this project. This was
-						also my first time designing a physical product so there was a lot to learn.
+						<div>
+							<h3>Design Challenge</h3>
+							<p>Design a product that positively stimulates the gaming behaviour of children between
+							six and twelve years old. It was quite a challenge to design the UX of this project. This was
+							also my first time designing a physical product so there was a lot to learn.
 								</p>
-					</div>
+						</div>
 					</div>
 
 					<div className={styles.contentWrapper}>

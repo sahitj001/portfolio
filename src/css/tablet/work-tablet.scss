@@ -3,27 +3,33 @@
 
 //tablet view
 
-@media (min-width: 369px) {
+// @media (min-width: 369px) {
+
+// }
+
+@media (min-width:369px) and (max-width: 1234px) {
 	.thumbnail {
 		width: 21rem;
 		margin: 1rem 1rem 1rem 1rem;
 	}
 
-	.tech p{
-		display: none;
-	}
-}
-
-@media (max-width: 1234px) {
-	.tech p{
+	.tech p {
 		display: none;
 	}
 
-	.itemText p{
+	.header h1{
+		font-size: $h1t;
+	}
+
+	.tech p {
+		display: none;
+	}
+
+	.itemText p {
 		font-size: 1rem;
 	}
 
-	.itemText h2{
+	.itemText h2 {
 		font-size: 1.5rem;
 	}
 

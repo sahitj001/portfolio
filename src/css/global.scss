@@ -7,7 +7,21 @@ $red: #E52529;
 $grey: #898989;
 // maybe i should use #626262
 
-.websiteLink{
+//font sizes for mobile
+$h1m: 1.75rem;
+$h2m: 1.2rem;
+
+//font sizes for tablet
+$h1t:2.5rem;
+//font size of h2 is the standard size: 1.5rem. this
+//is automatically done by using the h2 html tag
+
+//font sizes for desktop
+$h1d: 3.375rem;
+//just like the tablet font size
+
+//styling of the link you press when there is live version available
+.websiteLink {
 	font-size: 1.25rem;
 	transition: 0.35s;
 	margin-top: 1rem;
@@ -15,29 +29,25 @@ $grey: #898989;
 	margin-bottom: 1rem;
 }
 
-.websiteLink:hover{
+.websiteLink:hover {
 	color: $red;
 }
 
-h1{
-  color: white;
+h1 {
+	color: white;
 }
 
-h2{
-  color:white;
+h2 {
+	color: white;
 }
 
-h3{
-	color:white;
+h3 {
+	color: white;
 }
 
-.subtitle span{
-	color:$red;
-}
-
-p{
-  color:white;
-	letter-spacing:0.02rem ;
+p {
+	color: white;
+	letter-spacing: 0.02rem;
 }
 
 //description of the page
@@ -50,7 +60,7 @@ p{
 	margin-right: 0.5rem;
 }
 
-.header h2{
+.header h2 {
 	margin-right: 1rem;
 }
 
@@ -61,7 +71,7 @@ p{
 
 //tilting the main elements
 .tilt {
-	display:flex;
+	display: flex;
 	position: absolute;
 	align-content: center;
 	width: 95%;
@@ -71,8 +81,8 @@ p{
 }
 
 //the triangles at the outer edges
-.tiltDot{
-	display:flex;
+.tiltDot {
+	display: flex;
 	position: absolute;
 	align-content: center;
 	width: 93%;
@@ -87,94 +97,93 @@ p{
 }
 
 //first link of the nav
-.flexList li:first-child a{
+.flexList li:first-child a {
 	opacity: 0;
 	animation-fill-mode: forwards;
 	animation-duration: 0.75s;
 	animation-name: headingOpacity;
-	animation-delay:  0.25s;
+	animation-delay: 0.25s;
 	transition-timing-function: ease;
-	}
+}
 
 //second link of the nav
-.flexList li:nth-child(2) a{
+.flexList li:nth-child(2) a {
 	opacity: 0;
 	animation-fill-mode: forwards;
 	animation-duration: 0.75s;
 	animation-name: headingOpacity;
-	animation-delay:  0.4s;
+	animation-delay: 0.4s;
 	transition-timing-function: ease;
-	}
+}
 
 //third link of the nav
-.flexList li:nth-child(3) a{
+.flexList li:nth-child(3) a {
 	opacity: 0;
-  animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
 	animation-duration: 0.75s;
 	animation-name: headingOpacity;
-	animation-delay:  0.6s;
+	animation-delay: 0.6s;
 	transition-timing-function: ease;
-	}
+}
 
-	//if there is a fourth link of the nav, it will be styled here
-.flexList li:nth-child(4) a{
+//if there is a fourth link of the nav, it will be styled here
+.flexList li:nth-child(4) a {
 	opacity: 0;
-  animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
 	animation-duration: 0.75s;
 	animation-name: headingOpacity;
-	animation-delay:  0.8s;
+	animation-delay: 0.8s;
 	transition-timing-function: ease;
-	}
+}
 
 //title and description
-.header{
+.header {
 	opacity: 0;
-  animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
 	animation-duration: 0.75s;
 	animation-name: headingOpacity;
 	transition-timing-function: ease;
 	user-select: none;
 }
 
-.tech{
+//the LOCATION metadata at the top right of
+//the screen next to the upper right triangle
+.tech {
 	display: flex;
 	position: absolute;
 	font-weight: 200;
 	font-size: 0.7rem;
-	// color: $red;
-	top:4.9%;
-	right:6%;
+	top: 4.9%;
+	right: 6%;
 	user-select: none;
 }
 
-.tech p{
+.tech p {
 	margin-left: 0.2rem;
 	margin-right: 0.2rem;
 }
 
-.extra{
+//the text at the right bottom of the about page
+.credits {
 	display: flex;
 	position: absolute;
 	font-weight: 200;
 	font-size: 0.7rem;
 	user-select: none;
-
 	bottom: 4.15%;
-	right:6%;
+	right: 6%;
 
 }
 
-.extra p{
-	color:$grey;
+.credits p {
+	color: $grey;
 }
 
+li:hover a {
+	color: $red;
+	transition: 0.35s;
+}
 
-
-	li:hover a{
-		color:$red;
-		transition: 0.35s ;
-	}
-
-	li a{
-		transition: 0.35s ;
-	}
+li a {
+	transition: 0.35s;
+}

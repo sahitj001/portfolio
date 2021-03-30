@@ -7,54 +7,54 @@
 //desktop view
 
 @media (min-width: 1401px) {
-	.tech p:nth-child(1){
+	.tech p:nth-child(1) {
 		opacity: 0;
 		animation-fill-mode: forwards;
 		animation-duration: 0.75s;
 		animation-name: headingOpacity;
-		animation-delay:  1s;
+		animation-delay: 1s;
 		transition-timing-function: ease;
 		color: $grey;
 	}
 
-	.tech p:nth-child(2){
+	.tech p:nth-child(2) {
 		opacity: 0;
 		animation-fill-mode: forwards;
 		animation-duration: 0.75s;
 		animation-name: headingOpacity;
-		animation-delay:  1.2s;
+		animation-delay: 1.2s;
 		transition-timing-function: ease;
 
 	}
 
-	.tech p:nth-child(3){
+	.tech p:nth-child(3) {
 		opacity: 0;
 		animation-fill-mode: forwards;
 		animation-duration: 0.75s;
 		animation-name: headingOpacity;
-		animation-delay:  1.4s;
+		animation-delay: 1.4s;
 		transition-timing-function: ease;
 	}
 
-	.tech p:nth-child(4){
+	.tech p:nth-child(4) {
 		opacity: 0;
 		animation-fill-mode: forwards;
 		animation-duration: 0.75s;
 		animation-name: headingOpacity;
-		animation-delay:  1.6s;
+		animation-delay: 1.6s;
 		transition-timing-function: ease;
 	}
 
-	.extra p:first-child{
+	.extra p:first-child {
 		opacity: 0;
 		animation-fill-mode: forwards;
 		animation-duration: 0.75s;
 		animation-name: headingOpacity;
-		animation-delay:  1.8s;
+		animation-delay: 1.8s;
 		transition-timing-function: ease;
 	}
 
-	.contentWrapper{
+	.contentWrapper {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -87,7 +87,7 @@
 	.title {
 		padding: 0;
 		margin: 0;
-		font-size: 3.375rem;
+		font-size: $h1d;
 		font-weight: bold;
 		letter-spacing: 0.03em;
 	}
@@ -109,27 +109,27 @@
 		height: auto;
 	}
 
-	.section{
+	.section {
 		margin-top: 10em;
 		display: flex;
 		flex-wrap: wrap;
 	}
 
 	//styling the content within the column class
-	.content p{
+	.content p {
 		width: 30rem;
 		margin: 0.3rem 1rem 1rem 1rem;
 	}
 
-	.travelVideo{
-		width:63rem;
+	.travelVideo {
+		width: 63rem;
 	}
 
-	.content h3{
-		margin:1.75rem 1rem 0 1rem;
+	.content h3 {
+		margin: 1.75rem 1rem 0 1rem;
 	}
 
-	.content{
+	.content {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -140,12 +140,12 @@
 		transition-timing-function: ease;
 	}
 
-	.content p{
+	.content p {
 		line-height: 1.4em;
 		letter-spacing: 0.012em;
 	}
 
-	.whiteImgBg{
+	.whiteImgBg {
 		background-color: white;
 		display: flex;
 		flex-direction: row;
@@ -154,7 +154,7 @@
 		justify-content: center;
 	}
 
-	.content img{
+	.content img {
 		height: 24.5rem;
 		margin: 3rem 1.5rem 1.5em 1.5rem;
 	}
@@ -170,7 +170,7 @@
 		// width: 60rem;
 	}
 
-	.imageSize{
+	.imageSize {
 		width: 29em;
 		align-self: flex-start;
 	}

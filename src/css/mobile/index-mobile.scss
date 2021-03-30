@@ -2,6 +2,7 @@
 @import '../animations.scss';
 
 @media (max-width: 425px) {
+
 	//container that contains whole page
 	.container {
 		display: flex;
@@ -18,7 +19,7 @@
 
 	}
 
-	.tech p{
+	.tech p {
 		display: none;
 	}
 

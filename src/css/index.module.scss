@@ -3,27 +3,27 @@
 @import './mobile/index-mobile.scss';
 @import './tablet/index-tablet.scss';
 
-.container{
-	overflow:hidden;
+.container {
+	overflow: hidden;
 }
 
 @media (min-width: 1024px) {
-	.tech p:nth-child(1){
+	.tech p:nth-child(1) {
 		opacity: 0;
 		animation-fill-mode: forwards;
 		animation-duration: 0.75s;
 		animation-name: headingOpacity;
-		animation-delay:  1s;
+		animation-delay: 1s;
 		transition-timing-function: ease;
 		color: $grey;
 	}
 
-	.tech p:nth-child(2){
+	.tech p:nth-child(2) {
 		opacity: 0;
 		animation-fill-mode: forwards;
 		animation-duration: 0.75s;
 		animation-name: headingOpacity;
-		animation-delay:  1.2s;
+		animation-delay: 1.2s;
 		transition-timing-function: ease;
 	}
 
@@ -36,6 +36,7 @@
 		letter-spacing: 0.03em;
 	}
 
+	//main container
 	.container {
 		display: flex;
 		flex-direction: row;
@@ -145,7 +146,7 @@
 		transition: all 0.5s ease-in-out;
 	}
 
-	.stripes>div:hover{
+	.stripes>div:hover {
 		background-color: $red;
 		transition: transform 1s ease-in-out;
 	}

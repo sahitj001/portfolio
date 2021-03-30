@@ -44,22 +44,22 @@ export function Work() {
 				<img className={styles.brDot} src={workDot} alt="" />
 
 				<div className={styles.tech}>
-				<p>LOCATION:</p>
-				<p>WORK</p>
+					<p>LOCATION:</p>
+					<p>WORK</p>
 				</div>
 			</Tilt>
 
 			<div className={styles.content}>
 				<div className={styles.column}>
-				<Link to="/work/itsavirus">
+					<Link to="/work/itsavirus">
 						<div className={styles.item}>
 							<img className={styles.thumbnail} src={Itsavirus} alt="" />
-								<Tilt className={styles.tiltItem} tiltMaxAngleX={5} tiltMaxAngleY={5} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
-									<img className={styles.tlDot} src={itemDot} alt="" />
-									<img className={styles.blDot} src={itemDot} alt="" />
-									<img className={styles.trDot} src={itemDot} alt="" />
-									<img className={styles.brDot} src={itemDot} alt="" />
-								</Tilt>
+							<Tilt className={styles.tiltItem} tiltMaxAngleX={5} tiltMaxAngleY={5} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
+								<img className={styles.tlDot} src={itemDot} alt="" />
+								<img className={styles.blDot} src={itemDot} alt="" />
+								<img className={styles.trDot} src={itemDot} alt="" />
+								<img className={styles.brDot} src={itemDot} alt="" />
+							</Tilt>
 							<div className={styles.itemText}>
 								<h2>Itsavirus</h2>
 								<p>Mobility on blockchain.</p>
@@ -86,12 +86,12 @@ export function Work() {
 					<Link to="/work/tcg">
 						<div className={styles.item}>
 							<img className={styles.thumbnail} src={Tcg} alt="" />
-								<Tilt className={styles.tiltItem} tiltMaxAngleX={5} tiltMaxAngleY={5} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
-									<img className={styles.tlDot} src={itemDot} alt="" />
-									<img className={styles.blDot} src={itemDot} alt="" />
-									<img className={styles.trDot} src={itemDot} alt="" />
-									<img className={styles.brDot} src={itemDot} alt="" />
-								</Tilt>
+							<Tilt className={styles.tiltItem} tiltMaxAngleX={5} tiltMaxAngleY={5} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
+								<img className={styles.tlDot} src={itemDot} alt="" />
+								<img className={styles.blDot} src={itemDot} alt="" />
+								<img className={styles.trDot} src={itemDot} alt="" />
+								<img className={styles.brDot} src={itemDot} alt="" />
+							</Tilt>
 							<div className={styles.itemText}>
 								<h2>The Game Changer</h2>
 								<p>Game more, sleep more.</p>

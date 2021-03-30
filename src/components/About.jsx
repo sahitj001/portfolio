@@ -42,7 +42,7 @@ export function About() {
 					<p>ABOUT</p>
 				</div>
 
-				<div className={styles.extra}>
+				<div className={styles.credits}>
 					<p>PORTFOLIO DESIGNED AND CODED BY ME. BUILT ON REACT</p>
 
 				</div>
@@ -70,8 +70,8 @@ export function About() {
 								When COVID-19 is finally under control, I want to keep travelling and see more of Asia.
 							</p>
 
-							<p>I am always down for extra projects concerning UX, UI or webdesign. If you would you like to collaborate with me,
-								don't hesitate to contact me.</p>
+							<p>If you would you like to collaborate on projects concerning UX, UI or webdesign,
+								feel free to reach out.</p>
 
 
 

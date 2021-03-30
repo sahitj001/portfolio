@@ -45,10 +45,10 @@ export function Tinkaway() {
 				<img className={styles.brDot} src={workDot} alt="" />
 
 				<div className={styles.tech}>
-				<p>LOCATION:</p>
-				<p>WORK</p>
-				<p>//</p>
-				<p>TINKAWAY</p>
+					<p>LOCATION:</p>
+					<p>WORK</p>
+					<p>//</p>
+					<p>TINKAWAY</p>
 				</div>
 			</Tilt>
 
@@ -70,17 +70,17 @@ export function Tinkaway() {
 						<div>
 							<h3>Description</h3>
 							<p>
-							Tinkaway is a consultancy establishment that focuses on
-							getting you as company back on track. They deliver
-							three specific services: A consultationsession, brainstormsession
-							and they also offer taking the lead upon projects.
-							It is Tinkaway's goal to make sure that you as a company keeps growing.
+								Tinkaway is a consultancy establishment that focuses on
+								getting you as company back on track. They deliver
+								three specific services: A consultationsession, brainstormsession
+								and they also offer taking the lead upon projects.
+								It is Tinkaway's goal to make sure that you as a company keeps growing.
 						</p>
 						</div>
 
 						<div>
-						<h3>Design Challenge</h3>
-						<p>Design a website according to the branding guidelines of Tinkaway.
+							<h3>Design Challenge</h3>
+							<p>Design a website according to the branding guidelines of Tinkaway.
 						</p>
 						</div>
 
