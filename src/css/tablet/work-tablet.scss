@@ -19,6 +19,14 @@
 		display: none;
 	}
 
+	.itemText p{
+		font-size: 1rem;
+	}
+
+	.itemText h2{
+		font-size: 1.5rem;
+	}
+
 	.heading {
 		display: flex;
 		flex-direction: column;
@@ -111,7 +119,7 @@
 	}
 
 	.item:hover .thumbnail {
-		opacity: 0.5;
+		opacity: 0.2;
 		transition: opacity 0.2s;
 	}
 
@@ -131,8 +139,8 @@
 	.tiltItem {
 		position: absolute;
 		display: flex;
-		width: 95%;
-		height: 95%;
+		width: 90%;
+		height: 90%;
 		transform: translate(-50%, -50%);
 		top: 0;
 		left: 0;

@@ -8,6 +8,10 @@
 		display: none;
 	}
 
+	.header h2{
+		font-size:1.5rem;
+	}
+
 	.whiteImgBg{
 		background-color: white;
 		display: flex;
@@ -38,6 +42,24 @@
 		font-size: 1.2rem;
 	}
 
+	.header p {
+		// color: #FFCC00;
+		margin: 1em;
+		width:17rem;
+	}
+
+	.header h1{
+		font-size: 2.5rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
+	.header h2{
+		font-size: 1.1rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
 	.heading {
 		display: flex;
 		flex-direction: column;
@@ -47,23 +69,6 @@
 		justify-content: center;
 		margin-top: 15em;
 		flex-wrap: wrap;
-	}
-
-	.header p {
-		// color: #FFCC00;
-		margin: 1em;
-	}
-
-	.header h1{
-		font-size: 1.6rem;
-		margin-left: 1rem;
-		margin-right: 1rem;
-	}
-
-	.header h2{
-		font-size: 1.1rem;
-		margin-left: 1rem;
-		margin-right: 1rem;
 	}
 
 	.flexList {
@@ -264,6 +269,28 @@
 @media (max-width: 426px) {
 	.tech p{
 		display: none;
+	}
+
+	.header h1{
+		font-size: 1.75rem;
+	}
+
+	.header p {
+		// color: #FFCC00;
+		margin: 1em;
+		width:18.5rem;
+	}
+
+	.header h1{
+		font-size: 2.5rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
+	.header h2{
+		font-size: 1.5rem;
+		margin-left: 1rem;
+		margin-right: 1rem;
 	}
 
 	.whiteImgBg{

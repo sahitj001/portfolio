@@ -76,7 +76,8 @@ export function Tcg() {
 						<h3>The problem</h3>
 						<p>Young children have a lot of free time. They can choose to play outside
 						but also can game whenever they want. They often spend multiple hours gaming in a row.
-						These long sessions of gaming could make them end up being game addicts.
+						These long sessions of gaming could make them end up being game addicts. Gaming too much could
+						lead to sleep deprivation.
 								</p>
 					</div>
 
