@@ -6,7 +6,7 @@ import workDot from '../assets/images/work-dot.svg';
 import t1 from '../assets/images/tinkaway1.jpg';
 import t2 from '../assets/images/tinkaway2.jpg';
 import t3 from '../assets/images/tinkaway3.jpg';
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export function Tinkaway() {
 	return (
@@ -103,11 +103,27 @@ export function Tinkaway() {
 
 					<div className={styles.whiteImgBg}>
 
-						<a href="../static/media/tinkaway1.a2e658e2.jpg"><img src={t1} alt="" /></a>
+						<div className={styles.whiteImgBg}>
+							<a href="../static/media/tinkaway1.a2e658e2.jpg"><LazyLoadImage
+								height={400}
+								src={t1}
+								effect="blur"></LazyLoadImage></a>
+						</div>
 
-						<a href="../static/media/tinkaway2.7fc6bb31.jpg"><img src={t2} alt="" /></a>
+						<div className={styles.whiteImgBg}>
+							<a href="../static/media/tinkaway2.7fc6bb31.jpg"><LazyLoadImage
+								height={400}
+								src={t2}
+								effect="blur"></LazyLoadImage></a>
+						</div>
 
-						<a href="../static/media/tinkaway3.b2b4d6f2.jpg"><img src={t3} alt="" /></a>
+						<div className={styles.whiteImgBg}>
+							<a href="../static/media/tinkaway3.b2b4d6f2.jpg"><LazyLoadImage
+								height={400}
+								src={t3}
+								effect="blur"></LazyLoadImage></a>
+						</div>
+
 					</div>
 
 				</section>

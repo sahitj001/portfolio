@@ -11,6 +11,7 @@ import blocks from '../assets/images/blocks.svg';
 import man from '../assets/images/vmc-man.svg';
 import vehicles from '../assets/images/vehicles.svg';
 import tokenPage from '../assets/images/tokenpage.svg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 
 export function Itsavirus() {
@@ -51,7 +52,6 @@ export function Itsavirus() {
 
 				<div className={styles.tech}>
 					<p>LOCATION:</p>
-
 					<p>WORK</p>
 					<p>//</p>
 					<p>ITSAVIRUS</p>
@@ -66,7 +66,6 @@ export function Itsavirus() {
 							<h3>My role</h3>
 							<p>UI/Front-end</p>
 							<p>WORKED ON: Desk research, User Research, Concepting, Testing, Prototyping, Design Guide</p>
-
 						</div>
 
 						<div>
@@ -111,7 +110,6 @@ export function Itsavirus() {
 					<div className={styles.whiteImgBg}>
 						<img className={styles.imageSize} src={man} alt="" />
 						<img className={styles.imageSize} src={woman} alt="" />
-
 					</div>
 
 					<div className={styles.whiteImgBg}>
@@ -120,19 +118,31 @@ export function Itsavirus() {
 					</div>
 
 					<div className={styles.whiteImgBg}>
-						<a href="../static/media/landingpage.f2ab8c05.svg"><img src={landingPage} alt="" /></a>
+						<a href="../static/media/landingpage.f2ab8c05.svg"><LazyLoadImage
+						height={400}
+						src={landingPage}
+						effect="blur"></LazyLoadImage></a>
 					</div>
 
 					<div className={styles.whiteImgBg}>
-						<a href="../static/media/projectpage.5069222e.svg"><img src={projectPage} alt="" /></a>
+						<a href="../static/media/projectpage.5069222e.svg"><LazyLoadImage
+						height={400}
+						src={projectPage}
+						effect="blur"></LazyLoadImage></a>
 					</div>
 
 					<div className={styles.whiteImgBg}>
-						<a href="../static/media/contactpage.a47e2bf8.svg"><img src={contactPage} alt="" /></a>
+						<a href="../static/media/contactpage.a47e2bf8.svg"><LazyLoadImage
+						height={400}
+						src={contactPage}
+						effect="blur"></LazyLoadImage></a>
 					</div>
 
 					<div className={styles.whiteImgBg}>
-						<a href="../static/media/tokenpage.88dffc04.svg"><img src={tokenPage} alt="" /></a>
+						<a href="../static/media/tokenpage.88dffc04.svg"><LazyLoadImage
+						height={400}
+						src={tokenPage}
+						effect="blur"></LazyLoadImage></a>
 					</div>
 
 				</section>
