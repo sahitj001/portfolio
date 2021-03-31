@@ -19,6 +19,8 @@ export function Work() {
 
 		if (browser.name == 'safari') {
 			const check = document.querySelector(".work_workDot__2u1Fm");
+			const tiltItem = document.querySelector(".work_tiltItem__1AsBX");
+			tiltItem.setAttribute('style', 'visibility:hidden');
 			check.setAttribute('style', 'visibility:hidden');
 			console.log('it is safari');
 		}
