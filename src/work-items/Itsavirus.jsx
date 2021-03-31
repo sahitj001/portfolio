@@ -109,44 +109,56 @@ export function Itsavirus() {
 
 					<div className={styles.whiteImgBg}>
 						<LazyLoadImage
-						className={styles.imageSize}
-						height={464}
-						src={man}
-						effect="blur"></LazyLoadImage>
-						<img className={styles.imageSize} src={woman} alt="" />
+							className={styles.imageSize}
+							height={464}
+							src={man}
+							effect="blur"></LazyLoadImage>
+						<LazyLoadImage
+							className={styles.imageSize}
+							height={464}
+							src={woman}
+							effect="blur"></LazyLoadImage>
 					</div>
 
 					<div className={styles.whiteImgBg}>
-						<img className={styles.imageSize} src={vehicles} alt="" />
-						<img className={styles.imageSize} src={blocks} alt="" />
+						<LazyLoadImage
+							className={styles.imageSize}
+							height={464}
+							src={vehicles}
+							effect="blur"></LazyLoadImage>
+						<LazyLoadImage
+							className={styles.imageSize}
+							height={464}
+							src={blocks}
+							effect="blur"></LazyLoadImage>
 					</div>
 
 					<div className={styles.whiteImgBg}>
 						<a href="../static/media/landingpage.f2ab8c05.svg"><LazyLoadImage
-						height={400}
-						src={landingPage}
-						effect="blur"></LazyLoadImage></a>
+							height={400}
+							src={landingPage}
+							effect="blur"></LazyLoadImage></a>
 					</div>
 
 					<div className={styles.whiteImgBg}>
 						<a href="../static/media/projectpage.5069222e.svg"><LazyLoadImage
-						height={400}
-						src={projectPage}
-						effect="blur"></LazyLoadImage></a>
+							height={400}
+							src={projectPage}
+							effect="blur"></LazyLoadImage></a>
 					</div>
 
 					<div className={styles.whiteImgBg}>
 						<a href="../static/media/contactpage.a47e2bf8.svg"><LazyLoadImage
-						height={400}
-						src={contactPage}
-						effect="blur"></LazyLoadImage></a>
+							height={400}
+							src={contactPage}
+							effect="blur"></LazyLoadImage></a>
 					</div>
 
 					<div className={styles.whiteImgBg}>
 						<a href="../static/media/tokenpage.88dffc04.svg"><LazyLoadImage
-						height={400}
-						src={tokenPage}
-						effect="blur"></LazyLoadImage></a>
+							height={400}
+							src={tokenPage}
+							effect="blur"></LazyLoadImage></a>
 					</div>
 
 				</section>
