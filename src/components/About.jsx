@@ -1,12 +1,27 @@
-import React from "react"
+import { React, useEffect } from "react"
 import styles from '../css/about.module.scss'
 import { Route, BrowserRouter as Router, Link } from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
 import dot from '../assets/images/about-dot.svg';
 import video from '../assets/travell.mp4';
 import cat from '../assets/images/cat.bmp';
+import { detect } from "detect-browser";
 
 export function About() {
+
+	useEffect(() => {
+		const browser = detect();
+
+		if (browser.name == 'safari') {
+			const check = document.querySelector(".about_tiltDot__qo6bc");
+			check.setAttribute('style', 'visibility:hidden');
+			console.log('it is safari');
+		}
+		else {
+			console.log('no safari');
+		}
+	})
+
 	return (
 		<div className={styles.container}>
 
