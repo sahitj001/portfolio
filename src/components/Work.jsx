@@ -9,8 +9,16 @@ import Tcg from '../assets/images/tcg-thumbnail.jpg';
 import Itsavirus from '../assets/images/itsavirus-thumbnail.jpg';
 import workDot from '../assets/images/work-dot.svg';
 import itemDot from '../assets/images/item-dot.svg';
+import { detect } from "detect-browser";
 
 export function Work() {
+	const browser=detect();
+
+	if (browser) {
+		console.log(browser.name);
+		console.log(browser.version);
+		console.log(browser.os);
+	}
 	return (
 		<div className={styles.container}>
 
