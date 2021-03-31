@@ -108,7 +108,11 @@ export function Itsavirus() {
 					</div>
 
 					<div className={styles.whiteImgBg}>
-						<img className={styles.imageSize} src={man} alt="" />
+						<LazyLoadImage
+						className={styles.imageSize}
+						height={464}
+						src={man}
+						effect="blur"></LazyLoadImage>
 						<img className={styles.imageSize} src={woman} alt="" />
 					</div>
 

@@ -16,11 +16,11 @@ export function Index() {
 
 			<nav>
 				<ul className={styles.flexList}>
-					<li className={styles.navItem}>
-						<Link to="/about">About</Link>
+				<li className={styles.navItem}>
+						<Link to="/work">Work</Link>
 					</li>
 					<li className={styles.navItem}>
-						<Link to="/work">Work</Link>
+						<Link to="/about">About</Link>
 					</li>
 					<li className={styles.navItem}>
 						<a href="mailto:jordy.sahit@hva.nl">Contact</a>

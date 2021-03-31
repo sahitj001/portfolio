@@ -4,6 +4,7 @@ import { Route, BrowserRouter as Router, Link } from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
 import dot from '../assets/images/about-dot.svg';
 import video from '../assets/travell.mp4';
+import cat from '../assets/images/cat.bmp';
 
 export function About() {
 	return (
@@ -53,8 +54,6 @@ export function About() {
 
 					<div className={styles.contentWrapper}>
 
-
-
 						<div>
 							<p>I am a UX designer that wants to make the digital world a better place
 							for everyone. Having the traits of an explorer, I love to solve challenging
@@ -72,10 +71,9 @@ export function About() {
 
 							<p>If you would you like to collaborate on projects concerning UX, UI or webdesign,
 								feel free to reach out.</p>
-
-
-
 						</div>
+
+						<img className={styles.imageSize} src={cat} alt="" />
 
 					</div>
 					<video className={styles.travelVideo} src={video} autoPlay={true} loop={true} muted></video>
