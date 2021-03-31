@@ -1,4 +1,4 @@
-import React from "react"
+import { React, useEffect } from "react"
 import styles from '../css/work-item.module.scss'
 import { Route, BrowserRouter as Router, Link } from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
@@ -7,8 +7,23 @@ import t1 from '../assets/images/tinkaway1.jpg';
 import t2 from '../assets/images/tinkaway2.jpg';
 import t3 from '../assets/images/tinkaway3.jpg';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { detect } from "detect-browser";
 
 export function Tinkaway() {
+
+	useEffect(() => {
+		const browser = detect();
+
+		if (browser.name == 'safari') {
+			const check = document.querySelector(".work-item_workDot__17oIq");
+			check.setAttribute('style', 'visibility:hidden');
+			console.log('it is safari');
+		}
+		else {
+			console.log('no safari');
+		}
+	})
+
 	return (
 		<div className={styles.container}>
 

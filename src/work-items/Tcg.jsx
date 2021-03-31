@@ -1,4 +1,4 @@
-import React from "react"
+import { React, useEffect } from "react"
 import styles from '../css/work-item.module.scss'
 import { Route, BrowserRouter as Router, Link } from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
@@ -9,8 +9,23 @@ import chickenEmotions from '../assets/images/chicken-emotions.png';
 import beakRotation from '../assets/images/chicken-beak-rotation.svg';
 import chickenSetup from '../assets/images/chicken-setup.png';
 import chickenBonus from '../assets/images/chicken-bonus.png';
+import { detect } from "detect-browser";
 
 export function Tcg() {
+
+	useEffect(() => {
+		const browser = detect();
+
+		if (browser.name == 'safari') {
+			const check = document.querySelector(".work-item_workDot__17oIq");
+			check.setAttribute('style', 'visibility:hidden');
+			console.log('it is safari');
+		}
+		else {
+			console.log('no safari');
+		}
+	})
+
 	return (
 		<div className={styles.container}>
 

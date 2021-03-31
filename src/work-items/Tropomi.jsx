@@ -1,4 +1,4 @@
-import React from "react"
+import { React, useEffect } from "react"
 import styles from '../css/work-item.module.scss'
 import { Route, BrowserRouter as Router, Link } from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
@@ -9,9 +9,23 @@ import tropomi3 from '../assets/images/tropomi3.gif';
 import tropomi4 from '../assets/images/tropomi4.gif';
 import tropomi5 from '../assets/images/tropomi5.gif';
 import tropomi6 from '../assets/images/tropomi6.png';
-
+import { detect } from "detect-browser";
 
 export function Tropomi() {
+
+	useEffect(() => {
+		const browser = detect();
+
+		if (browser.name == 'safari') {
+			const check = document.querySelector(".work-item_workDot__17oIq");
+			check.setAttribute('style', 'visibility:hidden');
+			console.log('it is safari');
+		}
+		else {
+			console.log('no safari');
+		}
+	})
+
 	return (
 		<div className={styles.container}>
 

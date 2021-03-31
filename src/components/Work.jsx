@@ -1,4 +1,4 @@
-import React from "react"
+import { React, useEffect } from "react"
 import styles from '../css/work.module.scss'
 import { Route, BrowserRouter as Router, Link } from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
@@ -11,14 +11,22 @@ import workDot from '../assets/images/work-dot.svg';
 import itemDot from '../assets/images/item-dot.svg';
 import { detect } from "detect-browser";
 
-export function Work() {
-	const browser=detect();
 
-	if (browser) {
-		console.log(browser.name);
-		console.log(browser.version);
-		console.log(browser.os);
-	}
+export function Work() {
+
+	useEffect(() => {
+		const browser = detect();
+
+		if (browser.name == 'safari') {
+			const check = document.querySelector(".work_workDot__2u1Fm");
+			check.setAttribute('style', 'visibility:hidden');
+			console.log('it is safari');
+		}
+		else {
+			console.log('no safari');
+		}
+	})
+
 	return (
 		<div className={styles.container}>
 
