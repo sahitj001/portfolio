@@ -16,6 +16,14 @@
 	color: $red;
 }
 
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
+    @media {
+        .workDot{
+					display: none;
+				}
+    }
+}
+
 @media (min-width: 1401px) {
 
 	//animations for the LOCATION:DATA
