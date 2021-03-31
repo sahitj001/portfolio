@@ -17,9 +17,14 @@
 }
 
 @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) {
-        .workDot{
-					display: none;
-				}
+
+}
+
+/** Safari */
+@media not all and (min-resolution: 0.001dpcm) {
+	.workDot{
+		display: none;
+	}
 }
 
 @media (min-width: 1401px) {
