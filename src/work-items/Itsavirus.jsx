@@ -16,18 +16,18 @@ import { detect } from "detect-browser";
 
 export function Itsavirus() {
 
-	useEffect(() => {
-		const browser = detect();
+	// useEffect(() => {
+	// 	const browser = detect();
 
-		if (browser.name == 'safari') {
-			const check = document.querySelector(".work-item_workDot__17oIq");
-			check.setAttribute('style', 'visibility:hidden');
-			console.log('it is safari');
-		}
-		else {
-			console.log('no safari');
-		}
-	})
+	// 	if (browser.name == 'safari') {
+	// 		const check = document.querySelector(".work-item_workDot__17oIq");
+	// 		check.setAttribute('style', 'visibility:hidden');
+	// 		console.log('it is safari');
+	// 	}
+	// 	else {
+	// 		console.log('no safari');
+	// 	}
+	// })
 
 	return (
 		<div className={styles.container}>

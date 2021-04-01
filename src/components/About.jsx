@@ -9,18 +9,18 @@ import { detect } from "detect-browser";
 
 export function About() {
 
-	useEffect(() => {
-		const browser = detect();
+	// useEffect(() => {
+	// 	const browser = detect();
 
-		if (browser.name == 'safari') {
-			const check = document.querySelector(".about_tiltDot__qo6bc");
-			check.setAttribute('style', 'visibility:hidden');
-			console.log('it is safari');
-		}
-		else {
-			console.log('no safari');
-		}
-	})
+	// 	if (browser.name == 'safari') {
+	// 		const check = document.querySelector(".about_tiltDot__qo6bc");
+	// 		check.setAttribute('style', 'visibility:hidden');
+	// 		console.log('it is safari');
+	// 	}
+	// 	else {
+	// 		console.log('no safari');
+	// 	}
+	// })
 
 	return (
 		<div className={styles.container}>

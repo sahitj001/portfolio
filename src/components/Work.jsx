@@ -14,24 +14,24 @@ import { detect } from "detect-browser";
 
 export function Work() {
 
-	useEffect(() => {
-		const browser = detect();
+	// useEffect(() => {
+	// 	const browser = detect();
 
-		if (browser.name == 'safari') {
-			const check = document.querySelector(".work_workDot__2u1Fm");
-			const tiltItem = document.querySelectorAll(".work_tiltItem__1AsBX");
+	// 	if (browser.name == 'safari') {
+	// 		const check = document.querySelector(".work_workDot__2u1Fm");
+	// 		const tiltItem = document.querySelectorAll(".work_tiltItem__1AsBX");
 
-			for (let i = 0; i < tiltItem.length; i++) {
-				tiltItem[i].style.visibility = 'hidden';
-			}
-			check.setAttribute('style', 'visibility:hidden');
+	// 		for (let i = 0; i < tiltItem.length; i++) {
+	// 			tiltItem[i].style.visibility = 'hidden';
+	// 		}
+	// 		check.setAttribute('style', 'visibility:hidden');
 
-			console.log('it is safari');
-		}
-		else {
-			console.log('no safari');
-		}
-	})
+	// 		console.log('it is safari');
+	// 	}
+	// 	else {
+	// 		console.log('no safari');
+	// 	}
+	// })
 
 	return (
 		<div className={styles.container}>
