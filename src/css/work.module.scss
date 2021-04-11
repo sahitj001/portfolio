@@ -3,11 +3,6 @@
 @import './tablet/work-tablet';
 @import './mobile/work-mobile';
 
-//desktop view
-.container{
-	overflow: hidden;
-}
-
 @media (min-width: 1234px) {
 	.tech p {
 		display: flex;

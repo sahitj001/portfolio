@@ -1,10 +1,30 @@
+import { React, useEffect, useState } from "react"
 import styles from '../css/index.module.scss';
 import { Route, BrowserRouter as Router, Link } from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
-
+import { detect } from "detect-browser";
 
 
 export function Index() {
+	const [angle, setAngle] = useState();
+	const [itemAngle, setItemAngle] = useState();
+
+	useEffect(() => {
+		const browser = detect();
+
+		if (browser.name == 'safari') {
+			// make the dots untiltable, safari doesnt like tiltable objects. It will render black stuff over elements.
+			setAngle(0);
+			setItemAngle(0);
+			console.log('it is safari');
+		}
+		else {
+			// make the dots tiltable
+			setAngle(3);
+			setItemAngle(1)
+			console.log('no safari');
+		}
+	})
 
 	return (
 
@@ -28,7 +48,7 @@ export function Index() {
 				</ul>
 			</nav>
 
-			<Tilt className={styles.tiltDot} tiltMaxAngleX={3} tiltMaxAngleY={3} trackOnWindow={true} tiltReverse={true} transitionSpeed={2500}>
+			<Tilt className={styles.tiltDot} tiltMaxAngleX={angle} tiltMaxAngleY={angle} trackOnWindow={true} tiltReverse={true} transitionSpeed={2500}>
 				<div className={styles.tlDot}></div>
 				<div className={styles.blDot}></div>
 				<div className={styles.trDot}></div>
@@ -40,7 +60,7 @@ export function Index() {
 				</div>
 			</Tilt>
 
-			<Tilt className={styles.tilt} tiltMaxAngleX={1} tiltMaxAngleY={1} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
+			<Tilt className={styles.tilt} tiltMaxAngleX={itemAngle} tiltMaxAngleY={itemAngle} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
 				<div className={styles.el1}></div>
 				<div className={styles.el2}></div>
 				<div className={styles.el3}></div>

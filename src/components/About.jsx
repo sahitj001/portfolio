@@ -1,4 +1,4 @@
-import { React, useEffect } from "react"
+import { React, useEffect, useState } from "react"
 import styles from '../css/about.module.scss'
 import { Route, BrowserRouter as Router, Link } from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
@@ -8,19 +8,23 @@ import cat from '../assets/images/cat.bmp';
 import { detect } from "detect-browser";
 
 export function About() {
+	const [angle, setAngle] = useState();
 
-	// useEffect(() => {
-	// 	const browser = detect();
+	useEffect(() => {
+		const browser = detect();
 
-	// 	if (browser.name == 'safari') {
-	// 		const check = document.querySelector(".about_tiltDot__qo6bc");
-	// 		check.setAttribute('style', 'visibility:hidden');
-	// 		console.log('it is safari');
-	// 	}
-	// 	else {
-	// 		console.log('no safari');
-	// 	}
-	// })
+		if (browser.name == 'safari') {
+			// make the dots untiltable, safari doesnt like tiltable objects. It will render black stuff over elements.
+			setAngle(0);
+			console.log('it is safari');
+		}
+		else {
+			// make the dots tiltable
+			setAngle(2);
+			console.log('no safari');
+		}
+	})
+
 
 	return (
 		<div className={styles.container}>
@@ -47,7 +51,7 @@ export function About() {
 				</nav>
 			</div>
 
-			<Tilt className={styles.tiltDot} tiltMaxAngleX={2} tiltMaxAngleY={2} trackOnWindow={true} tiltReverse={true} transitionSpeed={2500}>
+			<Tilt className={styles.tiltDot} tiltMaxAngleX={angle} tiltMaxAngleY={angle} trackOnWindow={true} tiltReverse={true} transitionSpeed={2500}>
 				<img src={dot} className={styles.trDot} alt="" />
 				<img src={dot} className={styles.tlDot} alt="" />
 				<img src={dot} className={styles.blDot} alt="" />

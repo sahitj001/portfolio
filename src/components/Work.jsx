@@ -1,4 +1,4 @@
-import { React, useEffect } from "react"
+import { React, useEffect, useState } from "react"
 import styles from '../css/work.module.scss'
 import { Route, BrowserRouter as Router, Link } from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
@@ -14,24 +14,25 @@ import { detect } from "detect-browser";
 
 export function Work() {
 
-	// useEffect(() => {
-	// 	const browser = detect();
+	const [angle, setAngle] = useState();
+	const [itemAngle, setItemAngle] = useState();
 
-	// 	if (browser.name == 'safari') {
-	// 		const check = document.querySelector(".work_workDot__2u1Fm");
-	// 		const tiltItem = document.querySelectorAll(".work_tiltItem__1AsBX");
+	useEffect(() => {
+		const browser = detect();
 
-	// 		for (let i = 0; i < tiltItem.length; i++) {
-	// 			tiltItem[i].style.visibility = 'hidden';
-	// 		}
-	// 		check.setAttribute('style', 'visibility:hidden');
-
-	// 		console.log('it is safari');
-	// 	}
-	// 	else {
-	// 		console.log('no safari');
-	// 	}
-	// })
+		if (browser.name == 'safari') {
+			// make the dots untiltable, safari doesnt like tiltable objects. It will render black stuff over elements.
+			setAngle(0);
+			setItemAngle(0);
+			console.log('it is safari');
+		}
+		else {
+			// make the dots tiltable
+			setAngle(2);
+			setItemAngle(5);
+			console.log('no safari');
+		}
+	})
 
 	return (
 		<div className={styles.container}>
@@ -59,7 +60,7 @@ export function Work() {
 			</div>
 
 
-			<Tilt className={styles.workDot} tiltMaxAngleX={2} tiltMaxAngleY={2} trackOnWindow={true} tiltReverse={true} transitionSpeed={2500}>
+			<Tilt className={styles.workDot} tiltMaxAngleX={angle} tiltMaxAngleY={angle} trackOnWindow={true} tiltReverse={true} transitionSpeed={2500}>
 				<img className={styles.tlDot} src={workDot} alt="" />
 				<img className={styles.blDot} src={workDot} alt="" />
 				<img className={styles.trDot} src={workDot} alt="" />
@@ -76,7 +77,7 @@ export function Work() {
 					<Link to="/work/itsavirus">
 						<div className={styles.item}>
 							<img className={styles.thumbnail} src={Itsavirus} alt="" />
-							<Tilt className={styles.tiltItem} tiltMaxAngleX={5} tiltMaxAngleY={5} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
+							<Tilt className={styles.tiltItem} tiltMaxAngleX={itemAngle} tiltMaxAngleY={itemAngle} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
 								<img className={styles.tlDot} src={itemDot} alt="" />
 								<img className={styles.blDot} src={itemDot} alt="" />
 								<img className={styles.trDot} src={itemDot} alt="" />

@@ -1,4 +1,4 @@
-import { React, useEffect } from "react"
+import { React, useEffect, useState } from "react"
 import styles from '../css/work-item.module.scss'
 import { Route, BrowserRouter as Router, Link } from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
@@ -12,19 +12,22 @@ import chickenBonus from '../assets/images/chicken-bonus.png';
 import { detect } from "detect-browser";
 
 export function Tcg() {
+	const [angle, setAngle] = useState();
 
-	// useEffect(() => {
-	// 	const browser = detect();
+	useEffect(() => {
+		const browser = detect();
 
-	// 	if (browser.name == 'safari') {
-	// 		const check = document.querySelector(".work-item_workDot__17oIq");
-	// 		check.setAttribute('style', 'visibility:hidden');
-	// 		console.log('it is safari');
-	// 	}
-	// 	else {
-	// 		console.log('no safari');
-	// 	}
-	// })
+		if (browser.name == 'safari') {
+			// make the dots untiltable, safari doesnt like tiltable objects. It will render black stuff over elements.
+			setAngle(0);
+			console.log('it is safari');
+		}
+		else {
+			// make the dots tiltable
+			setAngle(1);
+			console.log('no safari');
+		}
+	})
 
 	return (
 		<div className={styles.container}>
@@ -55,7 +58,7 @@ export function Tcg() {
 			</div>
 
 
-			<Tilt className={styles.workDot} tiltMaxAngleX={1} tiltMaxAngleY={1} trackOnWindow={true} tiltReverse={true} transitionSpeed={2500}>
+			<Tilt className={styles.workDot} tiltMaxAngleX={angle} tiltMaxAngleY={angle} trackOnWindow={true} tiltReverse={true} transitionSpeed={2500}>
 				<img className={styles.tlDot} src={workDot} alt="" />
 				<img className={styles.blDot} src={workDot} alt="" />
 				<img className={styles.trDot} src={workDot} alt="" />
