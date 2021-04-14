@@ -3,6 +3,10 @@
 @import './tablet/work-tablet';
 @import './mobile/work-mobile';
 
+.flexList{
+	padding: 0;
+}
+
 @media (min-width: 1234px) {
 	.tech p {
 		display: flex;
@@ -173,7 +177,6 @@
 
 	//back button of the nav
 	.backButton {
-		font-weight: 800;
 		list-style: none;
 		margin-bottom: 1em;
 	}

@@ -47,7 +47,7 @@ export function Work() {
 				<nav>
 					<ul className={styles.flexList}>
 						<li className={styles.backButton}>
-							<Link to="/">  &lt; </Link>
+							<Link to="/">  Home </Link>
 						</li>
 						<li className={styles.navItem}>
 							<Link to="/about">About</Link>

@@ -42,7 +42,7 @@ export function Tropomi() {
 				<nav>
 					<ul className={styles.flexList}>
 						<li className={styles.backButton}>
-							<Link to="/work">  &lt; </Link>
+							<Link to="/work">  Back </Link>
 						</li>
 						<li className={styles.navItem}>
 							<Link to="/">Home</Link>

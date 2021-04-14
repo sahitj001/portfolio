@@ -3,9 +3,14 @@
 
 //tablet view
 
-@media (max-width: 1400px) {
+@media (min-width: 427px) and (max-width: 1400px) {
 	.travelVideo {
 		width: 25rem;
+	}
+
+	.imageSize{
+		height: auto;
+		width:28rem;
 	}
 
 	.tech p {
@@ -66,6 +71,11 @@
 		letter-spacing: 0.03em;
 	}
 
+	.content p {
+		width: 17rem;
+		margin: 0.3rem 1rem 1rem 1rem;
+	}
+
 	.container {
 		background-color: $bg;
 		display: flex;
@@ -106,12 +116,6 @@
 		animation-duration: 0.75s;
 		animation-name: headingOpacity;
 		transition-timing-function: ease;
-	}
-
-	.content img {
-		height: auto;
-		width: 18rem;
-		margin-top: 3em;
 	}
 
 	.column {
@@ -206,7 +210,6 @@
 	}
 
 	.backButton {
-		font-weight: 800;
 		list-style: none;
 		margin: 1em 1em 1em 1em;
 	}

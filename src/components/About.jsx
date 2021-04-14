@@ -4,7 +4,7 @@ import { Route, BrowserRouter as Router, Link } from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
 import dot from '../assets/images/about-dot.svg';
 import video from '../assets/travell.mp4';
-import cat from '../assets/images/cat.bmp';
+import me from '../assets/images/me.jpg';
 import { detect } from "detect-browser";
 
 export function About() {
@@ -39,7 +39,7 @@ export function About() {
 				<nav>
 					<ul className={styles.flexList}>
 						<li className={styles.backButton}>
-							<Link to="/">  &lt; </Link>
+							<Link to="/">  Home </Link>
 						</li>
 						<li className={styles.navItem}>
 							<Link to="/work">Work</Link>
@@ -92,7 +92,10 @@ export function About() {
 								feel free to reach out.</p>
 						</div>
 
-						<img className={styles.imageSize} src={cat} alt="" />
+						<div>
+						<img className={styles.imageSize} src={me} alt="" />
+						</div>
+
 
 					</div>
 					<video className={styles.travelVideo} src={video} autoPlay={true} loop={true} muted></video>

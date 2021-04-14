@@ -6,6 +6,10 @@
 
 //desktop view
 
+.flexList{
+	padding: 0;
+}
+
 @media (min-width: 1401px) {
 	.tech p:nth-child(1) {
 		opacity: 0;
@@ -154,11 +158,6 @@
 		justify-content: center;
 	}
 
-	.content img {
-		height: 24.5rem;
-		margin: 3rem 1.5rem 1.5em 1.5rem;
-	}
-
 	//portfolio item
 	.item {
 		position: relative;
@@ -171,8 +170,9 @@
 	}
 
 	.imageSize {
+		height: auto;
 		width: 29em;
-		align-self: flex-start;
+		margin: 0.5rem 1.5rem 1.5em 1.5rem;
 	}
 
 	//the outer dots in each far corner
@@ -231,7 +231,6 @@
 
 	//back button of the nav
 	.backButton {
-		font-weight: 800;
 		list-style: none;
 		margin-bottom: 1em;
 	}

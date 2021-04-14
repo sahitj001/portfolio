@@ -16,6 +16,10 @@
 	color: $red;
 }
 
+.flexList{
+	padding: 0;
+}
+
 @media (min-width: 1401px) {
 
 	//animations for the LOCATION:DATA
@@ -236,7 +240,6 @@
 
 	//back button of the nav
 	.backButton {
-		font-weight: 800;
 		list-style: none;
 		margin-bottom: 1em;
 	}

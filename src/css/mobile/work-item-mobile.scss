@@ -21,13 +21,14 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content: start;
 		margin-top: 2rem;
 	}
 
 	.content p {
 		margin: 0.3rem 1rem 1rem 1rem;
 		line-height: 1.4em;
+		width:17.5rem;
 	}
 
 	.header p {
@@ -55,7 +56,7 @@
 		align-self: center;
 		align-items: center;
 		justify-content: center;
-		margin-top: 15em;
+		margin-top: 2em;
 		flex-wrap: wrap;
 	}
 
@@ -63,6 +64,7 @@
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		justify-content: center;
 	}
 
 	.flexList li {
@@ -115,6 +117,7 @@
 		height: auto;
 		width: 18rem;
 		margin-top: 3em;
+		margin-left: 1em;
 	}
 
 	.column {
@@ -209,7 +212,6 @@
 	}
 
 	.backButton {
-		font-weight: 800;
 		list-style: none;
 		margin: 1em 1em 1em 1em;
 	}
@@ -253,7 +255,7 @@
 }
 
 
-@media (max-width:426px) {
+@media (min-width:321px) and (max-width:426px) {
 	.tech p {
 		display: none;
 	}
@@ -284,6 +286,7 @@
 		flex-wrap: wrap;
 		margin-top: 2rem;
 		justify-content: center;
+		width:23rem;
 	}
 
 	.heading {
@@ -293,7 +296,7 @@
 		align-self: center;
 		align-items: center;
 		justify-content: center;
-		margin-top: 10rem;
+		margin-top: 5rem;
 	}
 
 	.flexList {
@@ -330,7 +333,7 @@
 
 	//styling the content within the column class
 	.content p {
-		width: 20.5rem;
+		width: 21rem;
 		margin: 0.3rem 1rem 1rem 1rem;
 	}
 
@@ -339,8 +342,8 @@
 	}
 
 	.imageSize {
-		width: 29em;
-		align-self: flex-start;
+		width: 25em;
+		align-self: center;
 	}
 
 	.content {
@@ -362,6 +365,7 @@
 
 
 	.content img {
+		// width: 25em;
 		height: 22.5rem;
 		margin: 1rem 0 1.5rem 0;
 	}
@@ -458,7 +462,6 @@
 	}
 
 	.backButton {
-		font-weight: 800;
 		list-style: none;
 		margin: 1em 1em 1em 1em;
 	}
@@ -509,4 +512,6 @@
 	.header h2 {
 		width: 17rem;
 	}
+
+
 }
