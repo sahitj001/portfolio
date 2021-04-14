@@ -81,8 +81,13 @@ export function Itsavirus() {
 					<div className={styles.contentWrapper}>
 						<div>
 							<h3>My role</h3>
-							<p>UI/Front-end</p>
-							<p>WORKED ON: Desk research, User Research, Concepting, Testing, Prototyping, Design Guide</p>
+							<p>UI/UX/Front-end</p>
+							<h3>Worked on</h3>
+							<p>Desk research: Finding out how the websites of our competitors are designed like. I also did research what the usual look and feel is for
+								websites focused on cryptocurrency. Another thing I focused on researching, was on how to illustrate.
+							</p>
+							<p>Ideation and concepting: Designing pages for the website and based on this feedback I reiterated until I got a design I was satisfied with.</p>
+							<p>Prototyping: Making sure that the website looks good on desktop, tablet and smartphone.</p>
 						</div>
 
 						<div>

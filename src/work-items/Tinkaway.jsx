@@ -76,8 +76,12 @@ export function Tinkaway() {
 					<div className={styles.contentWrapper}>
 						<div>
 							<h3>My role</h3>
-							<p>UI/Front-end</p>
-							<p>WORKED ON: Desk research, Concepting, Prototyping, Design Guide, Front-end</p>
+							<p>UI/UX/Front-end</p>
+							<h3>Worked on</h3>
+							<p>Desk research: Getting inspiration on what kind of website the client would like to have.</p>
+							<p>Ideation and concepting: Showing the client the current design and iterating further on this work.</p>
+							<p>Front-end: Building the website in Wordpress. I built this website from scratch with Divi.</p>
+
 						</div>
 
 						<div>

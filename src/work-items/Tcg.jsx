@@ -79,7 +79,13 @@ export function Tcg() {
 						<div>
 							<h3>My role</h3>
 							<p>UI/UX</p>
-							<p>WORKED ON: Desk research, User Research, Concepting, Testing, Prototyping</p>
+							<h3>Worked on</h3>
+							<p>Desk research: Finding out from which angle we want to tackle our problem by asking ourselves the question: Do we want to better the gaming behaviour of children so that their sleeping quality will be improved? I also have done
+								research about how people sleep and what kind of REM phases there are.
+							</p>
+							<p>User research: Finding out how we can positively impact the behaviour of our target audience and implementing it in a way that attracts the user.</p>
+							<p>Ideation and Concepting: Showing our idea to the client and then reiterating based on the feedback.</p>
+							<p>Testing: Testing our concept to see if it was working as intended.</p>
 
 						</div>
 
