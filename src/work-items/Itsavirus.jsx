@@ -88,6 +88,7 @@ export function Itsavirus() {
 							</p>
 							<p>Ideation and concepting: Designing pages for the website and based on this feedback I reiterated until I got a design I was satisfied with.</p>
 							<p>Prototyping: Making sure that the website looks good on desktop, tablet and smartphone.</p>
+							<p>Front-end: Building the website on Wordpress with Divi.</p>
 						</div>
 
 						<div>
