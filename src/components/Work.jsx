@@ -122,7 +122,7 @@ export function Work() {
 						</div>
 					</Link>
 
-					<Link to="/work/tinkaway">
+					{/* <Link to="/work/tinkaway">
 						<div className={styles.item}>
 							<img className={styles.thumbnail} src={Tinkaway} alt="" />
 							<Tilt className={styles.tiltItem} tiltMaxAngleX={10} tiltMaxAngleY={10} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
@@ -136,7 +136,7 @@ export function Work() {
 								<p>Reaching your desired result again with your company.</p>
 							</div>
 						</div>
-					</Link>
+					</Link> */}
 
 					{/* <Link to="/work/tcg">
 						<div className={styles.item}>
