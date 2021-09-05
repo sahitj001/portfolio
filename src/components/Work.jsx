@@ -9,7 +9,9 @@ import Tcg from '../assets/images/tcg-thumbnail.jpg';
 import Itsavirus from '../assets/images/itsavirus-thumbnail.jpg';
 import workDot from '../assets/images/work-dot.svg';
 import itemDot from '../assets/images/item-dot.svg';
+import Mohi from '../assets/images/mohi-cover.png';
 import { detect } from "detect-browser";
+
 
 
 export function Work() {
@@ -72,8 +74,27 @@ export function Work() {
 				</div>
 			</Tilt>
 
+
+
 			<div className={styles.content}>
 				<div className={styles.column}>
+
+				<Link to="/work/mohi">
+						<div className={styles.item}>
+							<img className={styles.thumbnail} src={Mohi} alt="" />
+							<Tilt className={styles.tiltItem} tiltMaxAngleX={5} tiltMaxAngleY={5} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
+								<img className={styles.tlDot} src={itemDot} alt="" />
+								<img className={styles.blDot} src={itemDot} alt="" />
+								<img className={styles.trDot} src={itemDot} alt="" />
+								<img className={styles.brDot} src={itemDot} alt="" />
+							</Tilt>
+							<div className={styles.itemText}>
+								<h2>Mohi</h2>
+								<p>Exchanging meaningful content with your close ones.</p>
+							</div>
+						</div>
+					</Link>
+
 					<Link to="/work/itsavirus">
 						<div className={styles.item}>
 							<img className={styles.thumbnail} src={Itsavirus} alt="" />

@@ -8,6 +8,7 @@ import { PageNotFound } from '../components/PageNotFound';
 import { Itsavirus } from '../work-items/Itsavirus';
 import { Tropomi } from '../work-items/Tropomi';
 import { Tinkaway } from '../work-items/Tinkaway';
+import { Mohi } from '../work-items/Mohi';
 
 export function Navigation() {
 	return (
@@ -20,6 +21,7 @@ export function Navigation() {
 				<Route path="/work/itsavirus" exact component={Itsavirus}></Route>
 				<Route path="/work/knmi" exact component={Tropomi}></Route>
 				<Route path="/work/tinkaway" exact component={Tinkaway}></Route>
+				<Route path="/work/mohi" exact component={Mohi}></Route>
 				{/* <Route path="*" component={PageNotFound}></Route> */}
 			</Switch>
 		</Router>
