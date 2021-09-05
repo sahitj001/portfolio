@@ -106,7 +106,7 @@ export function Mohi() {
 						</p>
 
 							<p>
-							For my school minor I chose to focus more on refining my design skills and found User Experience a fitting choice. The minor has a period of one school semester wherein we follow some kind of bootcamp. The pressure applied to us was pretty heavy at some times. The objective of the bootcamp is to quickly learn the fundamentals of a UX designer. After having completed all these courses, your skills will be tested during the Mastertest. At the Mastertest you work 6 weeks long with a real client and put the learned skills from the bootcamp into practice. The client I chose was Mohi.
+							Mohi.app is a Slow Media platform combined with social activities to foster meaningful connections. This means that they want to transition to something slower with more focus on less. Centering around exchanging beautiful content experiences to bridge and strengthen actual relationships and inspire creativity. Slow Media advocates for alternative ways of making and using media that are more intentional, more enjoyable, longer lasting, more ethical, and of higher quality overall. By creating a Monthly Highlight you show your close ones what you liked the most.
 						</p>
 						</div>
 
