@@ -43,10 +43,7 @@ export function Tinkaway() {
 							<Link to="/work">  Back </Link>
 						</li>
 						<li className={styles.navItem}>
-							<Link to="/">Home</Link>
-						</li>
-						<li className={styles.navItem}>
-							<Link to="/about">About</Link>
+						<Link to="/">About</Link>
 						</li>
 						<li className={styles.navItem}>
 							<a href="mailto:jordy.sahit@hva.nl">Contact</a>

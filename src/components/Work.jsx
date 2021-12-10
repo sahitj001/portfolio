@@ -48,11 +48,8 @@ export function Work() {
 
 				<nav>
 					<ul className={styles.flexList}>
-						<li className={styles.backButton}>
-							<Link to="/">  Home </Link>
-						</li>
 						<li className={styles.navItem}>
-							<Link to="/about">About</Link>
+						<Link to="/">About</Link>
 						</li>
 						<li className={styles.navItem}>
 							<a href="mailto:jordy.sahit@hva.nl">Contact</a>

@@ -14,9 +14,8 @@ export function Navigation() {
 	return (
 		<Router>
 			<Switch>
-				<Route path="/" exact component={Index}></Route>
+				<Route path="/" exact component={About}></Route>
 				<Route path="/work/tcg" component={Tcg}></Route>
-				<Route path="/about" exact component={About}></Route>
 				<Route path="/work" exact component={Work}></Route>
 				<Route path="/work/itsavirus" exact component={Itsavirus}></Route>
 				<Route path="/work/knmi" exact component={Tropomi}></Route>

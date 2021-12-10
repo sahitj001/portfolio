@@ -33,14 +33,11 @@ export function About() {
 				<header className={styles.header}>
 					<h1 className={styles.title}>ABOUT</h1>
 					<h2 className={styles.subtitle}>JORDY SAHIT</h2>
-					<p>Focused on UX/UI</p>
+					<p>Focused on UX</p>
 				</header>
 
 				<nav>
 					<ul className={styles.flexList}>
-						<li className={styles.backButton}>
-							<Link to="/">  Home </Link>
-						</li>
 						<li className={styles.navItem}>
 							<Link to="/work">Work</Link>
 						</li>
@@ -82,9 +79,9 @@ export function About() {
 
 							<p>
 								As an explorer, I always try to grow and learn something new. I have been diving
-								into coding trying to build cool things on my own such as my portfolio. But aside from that I am always trying to learn new things about design.
+								into coding trying to build cool things on my own such as my portfolio. But aside from coding I am always trying to learn new things about design other than UX (UI design for example).
 								If I am not designing you'll find me in the gym doing powerlifting-focused training
-								four to six times a week. I also like to travel. My most recent trips were to Japan, the UK and South-Korea.
+								four to six times a week. I also like to travel. My most recent trips were to Japan, the U.K and South-Korea.
 								When COVID-19 is finally under control, I want to keep travelling and see more of Asia.
 							</p>
 
