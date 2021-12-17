@@ -43,7 +43,7 @@ export function Work() {
 				<header className={styles.header}>
 					<h1 className={styles.title}>WORK</h1>
 					<h2 className={styles.subtitle}>JORDY SAHIT</h2>
-					<p>Focused on UX/UI</p>
+					<p>Focused on UX</p>
 				</header>
 
 				<nav>
@@ -127,7 +127,7 @@ export function Work() {
 					<Link to="/work/tcg">
 						<div className={styles.item}>
 							<img className={styles.thumbnail} src={Tcg} alt="" />
-							<Tilt className={styles.tiltItem} tiltMaxAngleX={itemAngle} tiltMaxAngleY={itemAngle} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
+							<Tilt className={styles.tiltItem} tiltMaxAngleX={itemAngle``} tiltMaxAngleY={itemAngle``} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
 								<img className={styles.tlDot} src={itemDot} alt="" />
 								<img className={styles.blDot} src={itemDot} alt="" />
 								<img className={styles.trDot} src={itemDot} alt="" />
