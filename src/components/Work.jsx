@@ -79,7 +79,7 @@ export function Work() {
 				<Link to="/work/mohi">
 						<div className={styles.item}>
 							<img className={styles.thumbnail} src={Mohi} alt="" />
-							<Tilt className={styles.tiltItem} tiltMaxAngleX={5} tiltMaxAngleY={5} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
+							<Tilt className={styles.tiltItem} tiltMaxAngleX={itemAngle} tiltMaxAngleY={itemAngle} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
 								<img className={styles.tlDot} src={itemDot} alt="" />
 								<img className={styles.blDot} src={itemDot} alt="" />
 								<img className={styles.trDot} src={itemDot} alt="" />
@@ -111,7 +111,7 @@ export function Work() {
 					<Link to="/work/knmi">
 						<div className={styles.item}>
 							<img className={styles.thumbnail} src={Tropomi} alt="" />
-							<Tilt className={styles.tiltItem} tiltMaxAngleX={10} tiltMaxAngleY={10} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
+							<Tilt className={styles.tiltItem} tiltMaxAngleX={itemAngle} tiltMaxAngleY={itemAngle} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
 								<img className={styles.tlDot} src={itemDot} alt="" />
 								<img className={styles.blDot} src={itemDot} alt="" />
 								<img className={styles.trDot} src={itemDot} alt="" />
@@ -127,7 +127,7 @@ export function Work() {
 					<Link to="/work/tcg">
 						<div className={styles.item}>
 							<img className={styles.thumbnail} src={Tcg} alt="" />
-							<Tilt className={styles.tiltItem} tiltMaxAngleX={5} tiltMaxAngleY={5} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
+							<Tilt className={styles.tiltItem} tiltMaxAngleX={itemAngle} tiltMaxAngleY={itemAngle} trackOnWindow={true} tiltReverse={true} transitionSpeed={1500}>
 								<img className={styles.tlDot} src={itemDot} alt="" />
 								<img className={styles.blDot} src={itemDot} alt="" />
 								<img className={styles.trDot} src={itemDot} alt="" />
