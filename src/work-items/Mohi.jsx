@@ -16,6 +16,7 @@ import onboarding2 from '../assets/images/first-iteration.png';
 import onboarding3 from '../assets/images/iteration-2.png';
 import onboarding4 from '../assets/images/mohi-animation.gif';
 import onboarding5 from '../assets/images/mohi-wireflow.png';
+import mockup from '../assets/images/mohi-mockup.jpg';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { detect } from "detect-browser";
 
@@ -80,7 +81,12 @@ export function Mohi() {
 
 			<div className={styles.column}>
 				<section className={styles.content}>
+
 					<div className={styles.contentWrapper}>
+					<div>
+							<img className={styles.mockupBig} src={mockup}></img>
+				</div>
+
 						<div>
 							<h3>My role</h3>
 							<p>UX</p>

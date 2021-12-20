@@ -9,6 +9,7 @@ import chickenEmotions from '../assets/images/chicken-emotions.png';
 import beakRotation from '../assets/images/chicken-beak-rotation.svg';
 import chickenSetup from '../assets/images/chicken-setup.png';
 import chickenBonus from '../assets/images/chicken-bonus.png';
+import mockup from '../assets/images/tcg-mockup.jpg';
 import { detect } from "detect-browser";
 
 export function Tcg() {
@@ -72,7 +73,15 @@ export function Tcg() {
 
 			<div className={styles.column}>
 				<section className={styles.content}>
+				<div>
+							<img className={styles.mockupBig} src={mockup}></img>
+				</div>
+
+				<a className={styles.websiteLink} href="http://tgc.dzmedia.nl/"> Click here to go to the official one pager </a>
 					<div className={styles.contentWrapper}>
+
+
+
 						<div>
 							<h3>My role</h3>
 							<p>UI/UX</p>

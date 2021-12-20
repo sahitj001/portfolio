@@ -9,6 +9,8 @@ import tropomi3 from '../assets/images/tropomi3.gif';
 import tropomi4 from '../assets/images/tropomi4.gif';
 import tropomi5 from '../assets/images/tropomi5.gif';
 import tropomi6 from '../assets/images/tropomi6.png';
+import mockup1 from '../assets/images/id-mockup1.png';
+import mockup2 from '../assets/images/id-mockup2.png';
 import { detect } from "detect-browser";
 
 export function Tropomi() {
@@ -73,6 +75,13 @@ export function Tropomi() {
 
 			<div className={styles.column}>
 				<section className={styles.content}>
+				<div className={styles.mockupflex}>
+							<img src={mockup2}></img>
+							<img src={mockup1}></img>
+				</div>
+
+				<a className={styles.websiteLink} href="https://tropomi.netlify.app/"> Click here to go to the live project </a>
+
 					<div className={styles.contentWrapper}>
 						<div>
 							<h3>My role</h3>
@@ -135,7 +144,7 @@ export function Tropomi() {
 							quite complex datavisualisation so helping the user to understand how it works is an important design decision.
 					</p>
 						</div>
-						<a className={styles.websiteLink} href="https://tropomi.netlify.app/"> Click here to go to the live project </a>
+
 					</div>
 
 					<div className={styles.whiteImgBg}>

@@ -11,6 +11,8 @@ import blocks from '../assets/images/blocks.svg';
 import man from '../assets/images/vmc-man.svg';
 import vehicles from '../assets/images/vehicles.svg';
 import tokenPage from '../assets/images/tokenpage.svg';
+import mockup1 from '../assets/images/iav-mockup1.png';
+import mockup2 from '../assets/images/iav-mockup2.png';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { detect } from "detect-browser";
 
@@ -76,6 +78,12 @@ export function Itsavirus() {
 			<div className={styles.column}>
 				<section className={styles.content}>
 					<div className={styles.contentWrapper}>
+
+					<div className={styles.mockupflex}>
+							<img src={mockup2}></img>
+							<img src={mockup1}></img>
+				</div>
+
 						<div>
 							<h3>My role</h3>
 							<p>UI/UX/Front-end</p>
@@ -151,6 +159,10 @@ export function Itsavirus() {
 							height={464}
 							src={blocks}
 							effect="blur"></LazyLoadImage>
+					</div>
+
+					<div className={styles.contentWrapper}>
+						<div>	<p>You can click on the webpages, but you have to go back via your browser back button!</p></div>
 					</div>
 
 					<div className={styles.whiteImgBg}>

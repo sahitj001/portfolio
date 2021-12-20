@@ -120,6 +120,11 @@
 		margin-left: 1em;
 	}
 
+	.mockupBig{
+		height: 15rem !important;
+		width: 17rem !important;
+	}
+
 	.column {
 		position: relative;
 		display: flex;
@@ -265,6 +270,7 @@
 		width: 20.5rem;
 	}
 
+
 	.header h1 {
 		font-size: $h1m;
 		width: 17rem;
@@ -368,6 +374,11 @@
 		// width: 25em;
 		height: 22.5rem;
 		margin: 1rem 0 1.5rem 0;
+	}
+
+	.mockupBig{
+		height: 22.5rem !important;
+		width:100%;
 	}
 
 	.column {
@@ -511,6 +522,11 @@
 @media (max-width:526px) {
 	.header h2 {
 		width: 17rem;
+	}
+
+	.mockupBig{
+		height: 22rem !important;
+		width:20rem !important;
 	}
 
 
