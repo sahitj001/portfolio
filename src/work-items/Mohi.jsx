@@ -19,6 +19,9 @@ import onboarding5 from '../assets/images/mohi-wireflow.png';
 import mockup from '../assets/images/mohi-mockup.jpg';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { detect } from "detect-browser";
+import Zoom from 'react-medium-image-zoom'
+import 'react-medium-image-zoom/dist/styles.css'
+import { MapInteractionCSS } from 'react-map-interaction';
 
 export function Mohi() {
 	const [angle, setAngle] = useState();
@@ -152,7 +155,10 @@ export function Mohi() {
 					</div>
 
 					<div className={styles.whiteImgBg}>
-							<img src={onboarding1}></img>
+						<MapInteractionCSS>
+						<img src={onboarding1}></img>
+						</MapInteractionCSS>
+
 					</div>
 
 					<div className={styles.contentWrapper}>
@@ -187,7 +193,9 @@ export function Mohi() {
 					</div>
 
 					<div className={styles.whiteImgBg}>
+					<MapInteractionCSS>
 						<a href={"../static/media/mohi-wireflow.071736fd.png"}><img src={onboarding5} alt="" /></a>
+					</MapInteractionCSS>
 					</div>
 
 				</section>
