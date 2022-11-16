@@ -127,7 +127,7 @@ export function Mohi() {
 						<div>
 							<h3>The design</h3>
 							<h4>Gaining the insights</h4>
-							<p>In the first two weeks I have been purely focussing on gaining valuable insights to better the onboarding process. Through the interviews I have done and based on my own observations, I found:
+							<p>In the first two weeks I have been purely focusing on gaining valuable insights to better the onboarding process. Through the interviews I have done and based on my own observations, I found:
 					</p>
 					<p>
 					 - Users quickly forgot what happened in the first four screens of the onboarding. Mainly because they were setting up an account right after.
