@@ -181,7 +181,7 @@ export function Mohi() {
 					</div>
 
 					<div className={styles.contentWrapper}>
-						<p>For my last iteration I wanted to make it cleared for the user on how to upload items to Mohi. Due to my limited time during the mastertest I focused on showing how to upload items with animations. </p>
+						<p>For my last iteration I wanted to make it clearer for the user on how to upload items to Mohi. Due to my limited time during the mastertest I focused on showing how to upload items with animations. </p>
 					</div>
 
 					<div className={styles.whiteImgBg}>
