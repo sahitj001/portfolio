@@ -84,7 +84,7 @@ export function Tcg() {
 
 						<div>
 							<h3>My role</h3>
-							<p>UI/UX</p>
+							<p>UI/UX - Worked in a team that consisted out of four teammates</p>
 							<h3>Worked on</h3>
 							<p>Desk research: Finding out from which angle we want to tackle our problem by asking ourselves the question: Do we want to better the gaming behaviour of children so that their sleeping quality will be improved? I also have done
 								research about how people sleep and what kind of REM phases there are.

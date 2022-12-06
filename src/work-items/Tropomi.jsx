@@ -85,10 +85,10 @@ export function Tropomi() {
 					<div className={styles.contentWrapper}>
 						<div>
 							<h3>My role</h3>
-							<p>UI/UX/Front-end</p>
+							<p>UI/UX/Front-end - Worked together with a team that consisted out of four teammates</p>
 							<h3>Worked on</h3>
 							<p>Desk research: Gathering data such as wind direction, COVID-19 measures and cases. Doing research as to how we can design our solution for the target audience.</p>
-							<p>Prototyping and concepting: Testing different ideas with the client together with my team and reiterating the concept. , HTML/CSS.</p>
+							<p>Prototyping and concepting: Testing different ideas with the client together with the team and reiterating the concept. The concept was coded in HTML/CSS.</p>
 							<p>Design Guide: To keep the design consistent, I made a small Design Guide that shows which colours and font sizes should be used when the site is built.</p>
 							<p>HTML/CSS: I helped coding the front-end of our website.</p>
 						</div>

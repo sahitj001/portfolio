@@ -92,9 +92,9 @@ export function Mohi() {
 
 						<div>
 							<h3>My role</h3>
-							<p>UX</p>
+							<p>UX - Solo project</p>
 							<h3>Worked on</h3>
-							<p>Field research: Did interviews with completely new users who haven't used Mohi at all. From them I gained valuable insights.
+							<p>Field research: Did interviews with completely new users who hadn't used Mohi at all. From them I gained valuable insights.
 							</p>
 							<p>Desk research: Obtaining information from items such as internet articles from Medium and the book 'Better onboarding' by Krystal Higgins.</p>
 							<p>Ideation and concepting: I brainstormed a couple of ways to tackle the problem and eventually created one concept.</p>
@@ -118,7 +118,7 @@ export function Mohi() {
 
 						<div>
 							<h3>Design Challenge</h3>
-							<p>How can I improve the onboarding and sign up flow of Mohi? I want to achieve an improvement on the current design of the onboarding and sign up experience. This challenge is aimed at all media consumers that will be using Mohi. </p>
+							<p>How can I improve the onboarding and sign up flow of Mohi? I want to achieve an improvement on the current design of the onboarding and sign up experience. This challenge is aimed at all media consumers who will be using Mohi. </p>
 						</div>
 					</div>
 

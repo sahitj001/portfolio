@@ -86,7 +86,7 @@ export function Itsavirus() {
 
 						<div>
 							<h3>My role</h3>
-							<p>UI/UX/Front-end</p>
+							<p>UI/UX/Front-end - Design internship</p>
 							<h3>Worked on</h3>
 							<p>Desk research: Finding out how the websites of our competitors are designed like. I also did research what the usual look and feel is for
 								websites focused on cryptocurrency. Another thing I focused on researching, was on how to illustrate.
@@ -103,7 +103,7 @@ export function Itsavirus() {
 
 						<div>
 							<h3>Description</h3>
-							<p>For my internship I designed and built under request of Itsavirus. This website is for VMC, a venture initiated by Itsavirus.
+							<p>For my internship I designed and built a website under request of Itsavirus. This website is for VMC, a venture initiated by Itsavirus.
 							VMC developed a new blockchain platform (VMC CORE) in an attempt to develop a fully open
 							and decentralised payment and ticketing platform. The goal was to demonstrate a working
 							platform.

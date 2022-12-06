@@ -3,7 +3,7 @@ import styles from '../css/about.module.scss'
 import { Route, BrowserRouter as Router, Link } from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
 import dot from '../assets/images/about-dot.svg';
-import video from '../assets/travell.mp4';
+import video from '../assets/portfoliovid2.mp4';
 import me from '../assets/images/me.jpg';
 import { detect } from "detect-browser";
 
@@ -74,8 +74,7 @@ export function About() {
 							<p>I am a UX designer that wants to make the digital world a better place
 							for everyone. Having the traits of an explorer, I love to solve challenging
 							problems. I love finding the painpoints and seeing how a small idea transforms into a complete
-							concept. Collaborating with a team is my jam but I can also work as
-							a solo designer.</p>
+							concept.</p>
 
 							<p>
 								As an explorer, I always try to grow and learn something new. I have been diving
