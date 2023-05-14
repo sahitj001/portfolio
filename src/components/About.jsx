@@ -6,6 +6,7 @@ import dot from '../assets/images/about-dot.svg';
 import video from '../assets/portfoliovid2.mp4';
 import me from '../assets/images/me.jpg';
 import { detect } from "detect-browser";
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 export function About() {
 	const [angle, setAngle] = useState();
@@ -13,15 +14,15 @@ export function About() {
 	useEffect(() => {
 		const browser = detect();
 
-		if (browser.name == 'safari') {
+		if (isMobile) {
 			// make the dots untiltable, safari doesnt like tiltable objects. It will render black stuff over elements.
 			setAngle(0);
-			console.log('it is safari');
+			console.log('it is mobile');
 		}
 		else {
 			// make the dots tiltable
 			setAngle(2);
-			console.log('no safari');
+			console.log('not mobile');
 		}
 	})
 
