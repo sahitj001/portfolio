@@ -5,7 +5,6 @@ import Tilt from 'react-parallax-tilt';
 import dot from '../assets/images/about-dot.svg';
 import video from '../assets/portfoliovid2.mp4';
 import me from '../assets/images/me.jpg';
-import { detect } from "detect-browser";
 import { isMobile } from 'react-device-detect';
 
 export function About() {

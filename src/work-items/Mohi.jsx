@@ -18,18 +18,16 @@ import onboarding4 from '../assets/images/mohi-animation.gif';
 import onboarding5 from '../assets/images/mohi-wireflow.png';
 import mockup from '../assets/images/mohi-mockup.jpg';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { detect } from "detect-browser";
-import Zoom from 'react-medium-image-zoom'
-import 'react-medium-image-zoom/dist/styles.css'
+import { isMobile } from 'react-device-detect';
 import { MapInteractionCSS } from 'react-map-interaction';
 
 export function Mohi() {
 	const [angle, setAngle] = useState();
 
 	useEffect(() => {
-		const browser = detect();
 
-		if (browser.name == 'safari') {
+
+		if (isMobile) {
 			// make the dots untiltable, safari doesnt like tiltable objects. It will render black stuff over elements.
 			setAngle(0);
 			console.log('it is safari');

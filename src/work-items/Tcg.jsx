@@ -10,23 +10,20 @@ import beakRotation from '../assets/images/chicken-beak-rotation.svg';
 import chickenSetup from '../assets/images/chicken-setup.png';
 import chickenBonus from '../assets/images/chicken-bonus.png';
 import mockup from '../assets/images/tcg-mockup.jpg';
-import { detect } from "detect-browser";
+import { isMobile } from 'react-device-detect';
 
 export function Tcg() {
 	const [angle, setAngle] = useState();
 
 	useEffect(() => {
-		const browser = detect();
 
-		if (browser.name == 'safari') {
+		if (isMobile) {
 			// make the dots untiltable, safari doesnt like tiltable objects. It will render black stuff over elements.
 			setAngle(0);
-			console.log('it is safari');
 		}
 		else {
 			// make the dots tiltable
 			setAngle(1);
-			console.log('no safari');
 		}
 	})
 

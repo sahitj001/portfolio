@@ -2,27 +2,23 @@ import { React, useEffect, useState } from "react"
 import styles from '../css/index.module.scss';
 import { Route, BrowserRouter as Router, Link } from "react-router-dom";
 import Tilt from 'react-parallax-tilt';
-import { detect } from "detect-browser";
-
+import { isMobile } from 'react-device-detect';
 
 export function Index() {
 	const [angle, setAngle] = useState();
 	const [itemAngle, setItemAngle] = useState();
 
 	useEffect(() => {
-		const browser = detect();
 
-		if (browser.name == 'safari') {
+		if (isMobile) {
 			// make the dots untiltable, safari doesnt like tiltable objects. It will render black stuff over elements.
 			setAngle(0);
 			setItemAngle(0);
-			console.log('it is safari');
 		}
 		else {
 			// make the dots tiltable
 			setAngle(3);
 			setItemAngle(1)
-			console.log('no safari');
 		}
 	})
 

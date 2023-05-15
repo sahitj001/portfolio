@@ -11,23 +11,20 @@ import tropomi5 from '../assets/images/tropomi5.gif';
 import tropomi6 from '../assets/images/tropomi6.png';
 import mockup1 from '../assets/images/id-mockup1.png';
 import mockup2 from '../assets/images/id-mockup2.png';
-import { detect } from "detect-browser";
+import { isMobile } from 'react-device-detect';
 
 export function Tropomi() {
 	const [angle, setAngle] = useState();
 
 	useEffect(() => {
-		const browser = detect();
 
-		if (browser.name == 'safari') {
+		if (isMobile) {
 			// make the dots untiltable, safari doesnt like tiltable objects. It will render black stuff over elements.
 			setAngle(0);
-			console.log('it is safari');
 		}
 		else {
 			// make the dots tiltable
 			setAngle(1);
-			console.log('no safari');
 		}
 	})
 

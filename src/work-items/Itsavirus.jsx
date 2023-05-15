@@ -14,23 +14,21 @@ import tokenPage from '../assets/images/tokenpage.svg';
 import mockup1 from '../assets/images/iav-mockup1.png';
 import mockup2 from '../assets/images/iav-mockup2.png';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { detect } from "detect-browser";
+import { isMobile } from 'react-device-detect';
 
 export function Itsavirus() {
 	const [angle, setAngle] = useState();
 
 	useEffect(() => {
-		const browser = detect();
 
-		if (browser.name == 'safari') {
+		if (isMobile) {
 			// make the dots untiltable, safari doesnt like tiltable objects. It will render black stuff over elements.
 			setAngle(0);
-			console.log('it is safari');
 		}
 		else {
 			// make the dots tiltable
 			setAngle(1);
-			console.log('no safari');
+
 		}
 	})
 

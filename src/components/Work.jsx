@@ -10,8 +10,7 @@ import Itsavirus from '../assets/images/itsavirus-thumbnail.jpg';
 import workDot from '../assets/images/work-dot.svg';
 import itemDot from '../assets/images/item-dot.svg';
 import Mohi from '../assets/images/mohi-cover.png';
-import { detect } from "detect-browser";
-
+import { isMobile } from 'react-device-detect';
 
 
 export function Work() {
@@ -20,19 +19,16 @@ export function Work() {
 	const [itemAngle, setItemAngle] = useState();
 
 	useEffect(() => {
-		const browser = detect();
 
-		if (browser.name == 'safari') {
+		if (isMobile) {
 			// make the dots untiltable, safari doesnt like tiltable objects. It will render black stuff over elements.
 			setAngle(0);
 			setItemAngle(0);
-			console.log('it is safari');
 		}
 		else {
 			// make the dots tiltable
 			setAngle(2);
 			setItemAngle(5);
-			console.log('no safari');
 		}
 	})
 
